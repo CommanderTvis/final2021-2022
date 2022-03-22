@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3e0b916-efea-4621-a7a9-d96eb7b85f71">
+  <producedTypes>
+    <refType typeId="e2af5aca-5406-473e-ba5f-1541f7c8e47f" valueTypeId="29306c38-e226-46dc-a553-af4f35ac5db3"/>
+    <listType typeId="7d343b82-5190-4618-837c-4ca0a979785b" valueTypeId="47f9c808-c126-407f-a8e8-e920dea44719"/>
+    <managerType typeId="39e2994f-243f-4049-b047-5f88e1016b01" valueTypeId="d85e4bf7-0ac0-407f-8f1e-643d4f0bc8bb"/>
+  </producedTypes>
+  <name>ОснованияВыводаТовараИзЭксплуатации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основания вывода товара из эксплуатации</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="52c707a8-40c0-46bd-8ef5-945744007293">
+    <name>Списание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Списание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="10dc60b2-250c-456e-9dcf-5f845b7bf89e">
+    <name>Ремонт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ремонт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d9b6d3e3-ce82-419f-a855-ce300cd924f4">
+    <name>ПрофилактическиеРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профилактические работы</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

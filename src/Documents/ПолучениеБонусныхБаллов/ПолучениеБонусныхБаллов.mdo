@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f5addcdd-940c-4aa0-9e43-62980a731181">
+  <producedTypes>
+    <objectType typeId="3f57cd61-161e-4cd2-abbd-cb0725e742eb" valueTypeId="0ad3657b-159f-4db6-a9d9-a3325b6ca66d"/>
+    <refType typeId="1987b180-0626-42f5-8221-2001adc15468" valueTypeId="4537d786-0045-4a71-818b-24e40e459ced"/>
+    <selectionType typeId="fbf9c80e-5783-4e5f-8e02-500d6dab8739" valueTypeId="c4d1f0ee-b39c-4dfb-91ad-1a319ae53475"/>
+    <listType typeId="33a03ff9-a1f0-43ea-91ba-d051eba3b80d" valueTypeId="53904876-5c5d-46e9-b81f-ca4a0e1ecf92"/>
+    <managerType typeId="6871a3af-6825-4b6e-bcef-a2fa1b28bcbe" valueTypeId="458a6bd0-9534-4ac9-b2aa-a45e973ff9b1"/>
+  </producedTypes>
+  <name>ПолучениеБонусныхБаллов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получение бонусных баллов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПолучениеБонусныхБаллов.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Получение бонусных баллов</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Получения бонусных баллов</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПолучениеБонусныхБаллов.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="d6ec9df0-ce63-4d3b-b42a-492bcdc8cc1a">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="66d8bf9d-4fe0-43bc-9c1e-4ac7f03da3af">
+    <name>КоличествоБаллов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество баллов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="decf46e8-f151-451c-962c-837ef85080a0">
+    <name>Причина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПричиныПолученияБаллов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0695ad78-2dd4-4524-9fec-506392438294">
+    <name>Ивент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ивент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Ивенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dfdd0bc9-e00d-42ed-8174-b336ade7d2db">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="4d019bb4-ad2b-4cf9-a975-e59b0372410c">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

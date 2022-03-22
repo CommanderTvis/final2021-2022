@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="924656bf-e15d-4432-a6ce-fe49172f4bc6">
+  <producedTypes>
+    <objectType typeId="3fd91478-5cd8-4222-9ec1-771dce3d4436" valueTypeId="3e026afa-91ca-470e-a21b-071a8db89177"/>
+    <refType typeId="4f93ecaa-c432-47dd-b001-4d45e23be4a8" valueTypeId="efe54ea9-baa2-4f90-b180-34e3a902dd3d"/>
+    <selectionType typeId="fcf12c60-868d-4229-a504-97620d44a9b8" valueTypeId="663cd6c4-d440-4e54-b492-2b1048343342"/>
+    <listType typeId="7c0b5bfd-292e-4602-b4ea-cca81bc3d5d2" valueTypeId="47022cb3-0db2-4b1b-a571-e34e94ef6ccd"/>
+    <managerType typeId="144852b4-383a-452f-9945-24284c673bd9" valueTypeId="eebc2fad-655b-4866-9d4d-a922ba19a4bc"/>
+  </producedTypes>
+  <name>Ивенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ивенты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Ивенты.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Ивенты.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Артикул</value>
+    </synonym>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ивент</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Ивенты</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>4</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="e18d209b-5463-4090-a32d-109830064f5b">
+    <name>ДатаОткрытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата открытия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c3733bd5-46e0-4b75-9fbe-b9f34a2f7c58">
+    <name>ДатаЗакрытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата закрытия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5bcece64-09e8-4600-93af-daef9d479e8b">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="1a41154f-80be-4869-9ab5-7e475513c7a3">
+    <producedTypes>
+      <objectType typeId="fa5ad080-16a5-4ea0-b0b4-3f8c2382d83d" valueTypeId="0b6ff393-ab00-4551-868f-a18544fa5d76"/>
+      <rowType typeId="000f835b-f84f-4863-b99b-fe82c42a3a8e" valueTypeId="b92b7500-229e-4719-8725-ea15228602c5"/>
+    </producedTypes>
+    <name>Участники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участники</value>
+    </synonym>
+    <attributes uuid="9fab4bba-f603-4b31-bb68-bc3c8f4f088f">
+      <name>Клиент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Клиент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Клиенты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>

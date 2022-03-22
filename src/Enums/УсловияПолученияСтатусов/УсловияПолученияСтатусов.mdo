@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5af4569-d1c8-4aa0-8b9e-bdf3b0d8867a">
+  <producedTypes>
+    <refType typeId="b171af2c-449d-46cd-8039-ed8375548881" valueTypeId="c2f99255-1323-4440-a821-dfd1bda4fccc"/>
+    <listType typeId="7d1ff3d7-de1f-4f99-9d2d-14d692e96fbc" valueTypeId="ee918445-8755-4f9a-b9c2-ee5071e290f4"/>
+    <managerType typeId="ed63ae50-662e-41f0-9057-48ac59efbc9e" valueTypeId="6f637895-e7b0-4ed0-ac2e-079dc57bbddf"/>
+  </producedTypes>
+  <name>УсловияПолученияСтатусов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Условия получения статусов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1cb38a6a-bad6-44b9-a78b-a72a9f27b142">
+    <name>РегистрацияВСистеме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация в системе</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8352ba1b-5688-4729-9cfa-2828e8c9c442">
+    <name>ПодпискаИПолучениеПремиум</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписка и получение премиум-аккаунта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a4f0dd26-4cf0-4a47-ace0-39e4515e1a24">
+    <name>ВремяАрендыИПосещениеМероприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время аренды и посещение мероприятия</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

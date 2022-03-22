@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76249ccf-6c4c-42a7-ae6d-ad5a14597408">
+  <producedTypes>
+    <selectionType typeId="bc0332c6-a68b-4ba4-a627-5ba7979e1488" valueTypeId="55f05fdd-21a0-4b4d-bb67-7ee8a89c23b0"/>
+    <listType typeId="2aec0548-ad26-4205-aad1-29243c96dab2" valueTypeId="680fa651-6dd5-4b32-af4b-00a6ee7671b0"/>
+    <managerType typeId="1ee2abab-7225-4b09-96e1-e8e12b99efee" valueTypeId="c4a34784-f759-4ced-84e3-498ebaf5dc84"/>
+    <recordSetType typeId="b9d5c305-9233-4a23-b599-d106ed9838c1" valueTypeId="b3ed3fff-1c2d-4b5e-8db4-65168327c373"/>
+    <recordKeyType typeId="67d0eaec-970c-4e7d-a2d1-09cbcefe9062" valueTypeId="e87ba9ba-4de0-4547-b604-b6ab51fc8426"/>
+    <recordType typeId="72a71d35-c27e-4852-9c36-a64a76f58df2" valueTypeId="b78a5a78-d75f-4a82-8d86-e90e43942264"/>
+  </producedTypes>
+  <name>СтатистикаПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика пользователей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <listPresentation>
+    <key>ru</key>
+    <value>Время аренды пользователей</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Суммарное время аренды пользователей</value>
+  </extendedListPresentation>
+  <resources uuid="294cfc5d-141d-4a9f-b166-ace12764f423">
+    <name>ВремяАренды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время аренды</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="fe837a63-d578-4608-b6db-e89e9d4df876">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

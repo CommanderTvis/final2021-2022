@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d05960d8-3a88-4c12-ab64-9deaf37b2e5d">
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="084b99a3-41de-4e3d-bfae-f12357abc9ff">
   <name>СообщенияКлиентСервер</name>
   <synonym>
     <key>ru</key>
-    <value>Сообщения клиент сервер</value>
+    <value>Сообщения</value>
   </synonym>
   <clientManagedApplication>true</clientManagedApplication>
   <server>true</server>

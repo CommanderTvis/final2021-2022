@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4fd7bb2-8c68-407d-87b4-753ae236ea53">
+  <name>АдминистрированиеМероприятий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование мероприятий</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Ивенты</content>
+</mdclass:Subsystem>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6582d4d-0fc4-450b-a0e1-182f4ba93d0a">
+  <producedTypes>
+    <objectType typeId="cd4ccbe0-a1a7-45c2-a92f-82ba60cd5bb2" valueTypeId="94024ddb-6805-40f5-8c7a-33674bcbe4e9"/>
+    <refType typeId="a56408c6-ceb1-4c29-ada7-59ab23cd09d6" valueTypeId="1a806dea-fdc0-4bbe-af30-61fc0675cfdb"/>
+    <selectionType typeId="d16a4bba-3449-4a73-aad0-d9e0eafe7585" valueTypeId="3b75df47-cdcb-45df-8dcf-81214c034dc1"/>
+    <listType typeId="159fcc76-596e-49f5-a10f-7ce368d8103c" valueTypeId="c1bf7db6-008b-4b02-a7fd-7d6b605ae071"/>
+    <managerType typeId="2682c40e-08c9-48ba-a074-62a4d93a56be" valueTypeId="516134d3-2ac1-4e27-b4d0-a3c93e13d9b9"/>
+  </producedTypes>
+  <name>ВводВЭксплуатацию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ввод товаров в эксплуатацию</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВводВЭксплуатацию.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ДФ=дд.ММ.гггг</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=дд.ММ.гггг</value>
+    </editFormat>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </synonym>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ввод в эксплуатацию</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Ввод товара в эксплуатацию</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Вводы в эксплуатацию</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Вводы товаров в эксплуатацию</value>
+  </extendedListPresentation>
+  <numberLength>6</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВводВЭксплуатацию.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="f4db190a-58a6-428c-8cc5-c61f9a69ccff">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Товар, введенный в эксплуатацию.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b3e0b8e3-2e3c-41f4-a9d3-51c61f27895d">
+    <name>Станция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Станции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="441e442b-bdf5-49bf-a4a3-5898b42961d0">
+    <name>ТипНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="585ac312-0a3d-4e6b-a987-d544680c1063">
+    <name>Артикул</name>
+    <synonym>
+      <key>ru</key>
+      <value>Артикул</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>6</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="62b8b6b9-e456-4761-92d3-d239a6df69c4">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

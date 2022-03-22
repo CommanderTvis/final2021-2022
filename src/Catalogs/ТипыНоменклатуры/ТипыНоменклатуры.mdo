@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d50e5ff3-0f33-45be-a950-e1dfff819b67">
+  <producedTypes>
+    <objectType typeId="a461effd-054a-4b67-82d4-7123371d91c9" valueTypeId="5f7fdc67-eed8-4073-90d6-2706310b7595"/>
+    <refType typeId="34209373-4528-4a1f-9216-de125ff82335" valueTypeId="d8239ead-ea4e-4bcf-ab6d-6c098ab7be11"/>
+    <selectionType typeId="def3680b-14ab-4e6c-ba37-ad204af7c871" valueTypeId="a11ab119-e480-42d0-b90d-cd422f1f32fa"/>
+    <listType typeId="10d0d1ad-770f-4497-9021-927939c3ca00" valueTypeId="46ce1957-05fd-4a4e-a9d6-fd996bd232d9"/>
+    <managerType typeId="5a9caeef-9aa1-499d-8153-8103a793c32b" valueTypeId="da4883d6-5783-40ed-b44f-f181939dec1a"/>
+  </producedTypes>
+  <name>ТипыНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТипыНоменклатуры.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ТипыНоменклатуры.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value> Тип номенклатуры</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Типы номенклатуры</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Типы номенклатуры.</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

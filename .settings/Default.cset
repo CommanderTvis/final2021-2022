@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "settings": {
+    "module-accessibility-at-client": {
+      "enabled": false
+    }
+  }
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c95451f-83b0-493c-a218-d642f47869a1">
+  <producedTypes>
+    <objectType typeId="46755a25-8ec5-4114-bf38-dc32b51d0377" valueTypeId="e4673610-6905-412a-be6a-43b9b9c7ccac"/>
+    <refType typeId="f0dc220c-69af-40ad-8e06-8c4ee97fad0d" valueTypeId="72e12cdd-e636-480c-ad7e-f1ff6e386919"/>
+    <selectionType typeId="751df112-aed1-42d1-a914-511dd82682ab" valueTypeId="a93523ab-1a61-414b-8765-114ad22edde1"/>
+    <listType typeId="c2561dcb-49a7-4f22-a75c-e949651b5704" valueTypeId="ae99e50c-089a-46b0-a0b2-02f41690b752"/>
+    <managerType typeId="53f19a73-3080-460a-b38e-eb4fafed309d" valueTypeId="4d61d623-2aee-40ed-8f0e-e94724cc2590"/>
+  </producedTypes>
+  <name>ОткрытиеСтанции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Открытие станции</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОткрытиеСтанции.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Открытие станции</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Открытия станций</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ОткрытиеСтанции.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="8e4543f2-b9fc-4e3c-84f3-b08b9b671f84">
+    <name>Станция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Станции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="867ab4d2-127e-4803-a29c-88ccb76f7f59">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="81d2fd92-b732-4e07-a545-56c1a6008551">
+  <producedTypes>
+    <selectionType typeId="d1e32336-8cb5-41fc-8348-aa070f653a38" valueTypeId="0d06c0bd-c8a7-4c1d-9ad1-41a8e2d3090f"/>
+    <listType typeId="416f2dab-4884-410e-98ca-f8b9c0d410b6" valueTypeId="d29999a8-a2f2-43fb-aa5a-42855ba17c89"/>
+    <managerType typeId="12d4ba92-6b00-42d2-bdba-b47a5188f86f" valueTypeId="d0e35ac8-629b-4717-806a-3160db0113f3"/>
+    <recordSetType typeId="047be6d9-5e74-47a0-9407-1896307be1f0" valueTypeId="30845ef7-2946-40d4-8f4d-b4f71c933dff"/>
+    <recordKeyType typeId="f8cb9407-ed2e-46c8-9007-74a0046106d1" valueTypeId="6d951f94-bf6d-4599-b140-fed668385f30"/>
+    <recordType typeId="f2036022-aefc-49ce-99e5-a208c6540157" valueTypeId="cb4f3d4a-87b9-432c-8d3c-b74f2fe81cd1"/>
+    <recordManagerType typeId="9840e723-4330-4e06-b25f-82a6d84e797f" valueTypeId="6a28734f-9f69-463c-9f36-d103ec77f675"/>
+  </producedTypes>
+  <name>ПрайсПоТарифам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прайс-лист по тарифам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Значение тарифа</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Прайс-лист по тарифам</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Данные о стоимости 1 минуты аренды определенного типа товара. </value>
+  </explanation>
+  <resources uuid="66fc9160-415f-4357-a10d-6ca6dd28758a">
+    <name>Тариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф (в БАЛЛАХ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение тарифа в БАЛЛАХ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="975da255-91b8-407e-a650-53c99c140cf0">
+    <name>ТипНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

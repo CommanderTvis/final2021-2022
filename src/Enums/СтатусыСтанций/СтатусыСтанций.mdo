@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83b0e2be-9b3b-4415-a004-350f9892ee42">
+  <producedTypes>
+    <refType typeId="af5a6760-f82a-47a4-b8bb-277d811beb39" valueTypeId="369638a5-0f3a-4f4f-b3ed-8ae64fabd268"/>
+    <listType typeId="05484449-66bd-4ce6-a6fb-17800fcfe98b" valueTypeId="f963b161-18d0-439b-96ba-3dd609910fdf"/>
+    <managerType typeId="78e2396b-f963-43e6-a82d-f0a5b124ec49" valueTypeId="a7f73352-03cc-4ae1-9281-075b94631db3"/>
+  </producedTypes>
+  <name>СтатусыСтанций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы станций</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ad4b28ed-380f-43ac-9bbb-00e6997db09e">
+    <name>Ок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ок</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="07c93d09-5605-45cb-ade0-bdd265ef075e">
+    <name>Проверка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="015fcfad-a3d8-4617-a305-c84a9d9dc257">
+    <name>ПрофилактическиеРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профилактические работы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f897d813-df47-4fa6-9511-4557ed4fde0e">
+    <name>РаботыПоУлучшению</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работы по улучшению</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="280b2932-9818-4da2-9d81-4f822234e036">
+    <name>РемонтныеРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ремонтные работы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8f3f6528-fd5c-4ce1-9015-3c05e007a89c">
+    <name>Демонтаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Демонтаж</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

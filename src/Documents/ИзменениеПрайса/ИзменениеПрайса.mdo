@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0213117b-c7b8-4038-8a5e-d7502fe2b18e">
+  <producedTypes>
+    <objectType typeId="30667bdb-b9e9-46cc-a92f-89375a1f8b4f" valueTypeId="8c2c0fc0-e26f-413f-aa12-42e784657521"/>
+    <refType typeId="c052e2e9-a8fc-4230-9e77-1aa6f45f525c" valueTypeId="6170b4fd-a9c5-45b3-b8c0-8ed6a553eeb5"/>
+    <selectionType typeId="3ae99eed-6fed-4590-b79f-653dcb7f8730" valueTypeId="d3f64f74-2cfa-4b6a-a000-acda14b87760"/>
+    <listType typeId="f3303c70-b42d-4526-b6bd-707d9074cf7b" valueTypeId="5848b9c5-33e9-4a2a-9080-fb56d0ed6fc1"/>
+    <managerType typeId="8ea62d07-6795-45a7-910b-2c745267d24c" valueTypeId="02c316fe-a8ee-4e21-89b0-2fd54f2400c7"/>
+  </producedTypes>
+  <name>ИзменениеПрайса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение прайса</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ИзменениеПрайса.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </synonym>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Изменение прайса</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Изменение прайс-листа</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Изменения прайса</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Изменения прайс-листа</value>
+  </extendedListPresentation>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ИзменениеПрайса.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ПрайсПоТарифам</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="9e19f564-d187-4629-8a4a-0c5a2e0c7db7">
+    <name>Тариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф (в БАЛЛАХ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение тарифа в БАЛЛАХ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a4a3b75a-c609-4f3c-a8b8-27d02a947864">
+    <name>ТипНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="eb80d734-1ba7-4587-bcbd-beb9ffe2936a">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

@@ -39,7 +39,43 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.АдминистрированиеМероприятий</subsystems>
+  <subsystems>Subsystem.КонтрольКлиентскихДействий</subsystems>
+  <subsystems>Subsystem.УправлениеНоменклатурой</subsystems>
+  <subsystems>Subsystem.УправлениеСтанциями</subsystems>
+  <roles>Role.Администратор</roles>
+  <commonModules>CommonModule.ПользователиВызовСервера</commonModules>
   <commonModules>CommonModule.ПосылкаПочтыВызовСервера</commonModules>
+  <commonModules>CommonModule.ПосылкаПочтыКлиент</commonModules>
+  <commonModules>CommonModule.ПроверкаУникальностиВызовСервера</commonModules>
   <commonModules>CommonModule.РегулярныеВыраженияВызовСервера</commonModules>
+  <commonModules>CommonModule.РеквизитыФормыКлиентСервер</commonModules>
   <commonModules>CommonModule.СообщенияКлиентСервер</commonModules>
+  <commonModules>CommonModule.СтрокиКлиентСервер</commonModules>
+  <constants>Constant.АдресПочтыКотэ</constants>
+  <catalogs>Catalog.Ивенты</catalogs>
+  <catalogs>Catalog.Клиенты</catalogs>
+  <catalogs>Catalog.КодыСтран</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.Сотрудники</catalogs>
+  <catalogs>Catalog.Станции</catalogs>
+  <catalogs>Catalog.Статусы</catalogs>
+  <catalogs>Catalog.ТипыНоменклатуры</catalogs>
+  <documents>Document.ВводВЭксплуатацию</documents>
+  <documents>Document.ВыводИзЭксплуатации</documents>
+  <documents>Document.ЗакрытиеСтанции</documents>
+  <documents>Document.ИзменениеПрайса</documents>
+  <documents>Document.НачалоАренды</documents>
+  <documents>Document.ОкончаниеАренды</documents>
+  <documents>Document.ОплатаАренды</documents>
+  <documents>Document.ОткрытиеСтанции</documents>
+  <documents>Document.ПеремещениеТовара</documents>
+  <documents>Document.ПолучениеБонусныхБаллов</documents>
+  <documents>Document.ПриостановкаРаботыСтанции</documents>
+  <enums>Enum.ОснованияВыводаТовараИзЭксплуатации</enums>
+  <enums>Enum.ПричиныПолученияБаллов</enums>
+  <enums>Enum.СтатусыСтанций</enums>
+  <enums>Enum.УсловияПолученияСтатусов</enums>
+  <informationRegisters>InformationRegister.ПрайсПоТарифам</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.СтатистикаПользователей</accumulationRegisters>
 </mdclass:Configuration>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3632732-3747-49d3-8029-1b274ae9b34e">
+  <producedTypes>
+    <objectType typeId="035e9cf2-671b-4f84-a9be-92ae63d66ded" valueTypeId="3112da76-6a46-431b-83a3-499bff8c111e"/>
+    <refType typeId="7e90ca40-10c8-447a-a450-ab6f2ff2cb50" valueTypeId="d44e3f4a-05fc-43ff-879a-7f6e6c81f262"/>
+    <selectionType typeId="f42e1c73-b6da-4569-87bc-65f819f33024" valueTypeId="f418c08d-ceed-4b8a-bc3d-962553e20864"/>
+    <listType typeId="fafd73b6-9189-4b1d-8aff-9920b997b436" valueTypeId="f1c48f88-2907-4973-9c85-c1085788f217"/>
+    <managerType typeId="0f65fae8-dd8b-4914-bd2f-d4641a08dec4" valueTypeId="d62a077d-7f91-4f83-a3b2-d8e2f3c40ac0"/>
+  </producedTypes>
+  <name>ПеремещениеТовара</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перемещение товара</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПеремещениеТовара.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </synonym>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Перемещение товара</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Перемещения товаров</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Day</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПеремещениеТовара.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="8dcd8c76-ec57-4e8a-826c-b31eb84d67c9">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="24986782-73cd-44fd-8a3d-3934f9593158">
+    <name>Станция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Станции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="31683ac5-b71f-401b-97d4-433ea30d3ae7">
+    <name>Инициатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инициатор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3f399ba1-9b0d-4b9e-a8cc-f493db567210">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

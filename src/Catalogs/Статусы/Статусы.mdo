@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f5625f7-3521-4548-80ab-080bec4e5439">
+  <producedTypes>
+    <objectType typeId="ab65b1cf-0bc7-41e9-9423-e31f87b497d3" valueTypeId="6708460c-c4f2-4e25-9c22-49aef5ebb20f"/>
+    <refType typeId="cf2d1d0c-1352-42b1-9559-e519bb509e78" valueTypeId="a1181794-00be-458c-8c43-28e71e6cb25c"/>
+    <selectionType typeId="3f3620d0-ff6c-468a-8f8e-8802fa92a0e8" valueTypeId="bafa484b-ae4c-4694-9c5a-218ba0c34be5"/>
+    <listType typeId="c2c1829a-661a-4c18-9d3d-6d0644176bbc" valueTypeId="777786f7-7f72-42d3-8b55-7dec5853cd5a"/>
+    <managerType typeId="bd25ed67-19f9-4427-a79a-b22700e22a44" valueTypeId="64301ade-1b02-4e2b-a121-c83b4d9b6a7d"/>
+  </producedTypes>
+  <name>Статусы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Статусы.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Статусы.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Статус</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Статус пользователя</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Статусы</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Статусы пользователей</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Возможные статусы пользователей.</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="b6d49a3e-05be-4fd0-8a3d-cbb4ae03d368">
+    <name>Скидка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скидка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=2; ЧФ=Ч%</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=2; ЧФ=Ч%</value>
+    </editFormat>
+    <minValue xsi:type="core:StringValue">
+      <value>0</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>99</value>
+    </maxValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2c1f426f-b9b7-4560-aec9-c62cfa39282f">
+    <name>УсловиеПолучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условие получения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.УсловияПолученияСтатусов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="73142276-1f47-472e-a495-f3bc34e57626">
+    <name>ВремяАренды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время аренды для получения (мин.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7605bc89-e4f5-4e8c-a6de-82185ceaee88">
+    <name>КоличествоИвентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ивентов для получения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

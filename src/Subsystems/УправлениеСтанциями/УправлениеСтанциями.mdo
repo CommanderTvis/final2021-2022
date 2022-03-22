@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f426b7f-3e4e-4802-90af-23ae71e95559">
+  <name>УправлениеСтанциями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление станциями</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Станции</content>
+  <content>Document.ЗакрытиеСтанции</content>
+  <content>Document.ОткрытиеСтанции</content>
+  <content>Document.ПриостановкаРаботыСтанции</content>
+  <content>Enum.СтатусыСтанций</content>
+</mdclass:Subsystem>

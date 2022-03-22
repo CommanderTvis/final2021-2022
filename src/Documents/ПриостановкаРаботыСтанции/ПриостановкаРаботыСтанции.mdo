@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="972b01f6-f625-45da-9a4a-bffbfb388f4a">
+  <producedTypes>
+    <objectType typeId="99a730b9-223d-4a8e-bacd-de6d542f43f5" valueTypeId="6074b9dd-9781-4ddf-9e57-709902c55a50"/>
+    <refType typeId="336301c6-374a-42c0-9496-cf16694572ee" valueTypeId="17e8b86d-93cb-48ed-899b-5322f4aed3b2"/>
+    <selectionType typeId="4b069650-98ed-48e7-b52b-09283b539735" valueTypeId="2aec7611-851a-4b05-9d15-183accdff898"/>
+    <listType typeId="003674f7-d668-427e-9e67-b657ef2c36e8" valueTypeId="41f7b90b-f236-4bab-a7ad-714dc04e1368"/>
+    <managerType typeId="dde92adc-77be-481a-84a1-a14cf01978e5" valueTypeId="ca952313-7872-425c-bef0-34e5b020500c"/>
+  </producedTypes>
+  <name>ПриостановкаРаботыСтанции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приостановка работы станции</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриостановкаРаботыСтанции.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Приостановка работы станции</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Приостановки работы станций</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПриостановкаРаботыСтанции.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="4ab6d214-81c6-4bf4-87f2-903cda628aa4">
+    <name>Станция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Станции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="945e37f4-c623-4f42-934f-05dfb20306da">
+    <name>ПричинаОстановки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина остановки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыСтанций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="7bf4cb33-f07a-4d69-b7a5-dbd06b983c6d">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

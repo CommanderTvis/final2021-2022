@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab1a89b3-4f2f-4f61-ad8b-776134591737">
+  <producedTypes>
+    <objectType typeId="83fd93ff-66ff-425b-bdc3-058fae3dd097" valueTypeId="b74bb782-0d55-4fb8-a7e7-d7327f825dab"/>
+    <refType typeId="00834fa4-fcdd-4204-8156-d9dee716a926" valueTypeId="5a283cea-b774-4ac2-a1c2-2c9101265a3a"/>
+    <selectionType typeId="400ea793-fd5c-4fa8-8838-f9fc501e39a6" valueTypeId="6de2784a-109d-4172-8e18-09442d979e04"/>
+    <listType typeId="73be3821-b4ed-4227-9779-4f51bfe2b5a3" valueTypeId="51366b65-4ce6-4ab7-87b0-0c4c7046b85f"/>
+    <managerType typeId="595356e1-deb6-44ce-9a0f-6290d79a6e08" valueTypeId="01411c0b-ffc3-44c3-b91b-42b2c6de5f0d"/>
+  </producedTypes>
+  <name>ОплатаАренды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оплата аренды</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОплатаАренды.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </synonym>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=6; ЧВН=; ЧГ=</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=6; ЧВН=; ЧГ=</value>
+    </editFormat>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата и время</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Оплата аренды</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Оплата аренды товара</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Оплаты аренды</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Оплаты аренды товаров</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Факт полной оплаты одной аренды.</value>
+  </explanation>
+  <numberLength>6</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ОплатаАренды.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.СтатистикаПользователей</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="f2881136-e2b8-45d8-bb65-70687961445d">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь-арендатор.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b6a201aa-6d78-4cc8-bb23-94b85e13ee2e">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Товар, взятый в аренду.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8d6bcd96-23ff-4d02-bfcf-a1337d635359">
+    <name>Скидка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скидка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=2; ЧФ=Ч%</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=2; ЧФ=Ч%</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Скидка, с которой была проведена оплата, в процентах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9f1b3a2a-f761-46b5-a742-bacc894f2496">
+    <name>ВремяАренды</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время аренды (в минутах)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время аренды в минутах.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="de09105e-d4c5-45b3-9629-dd415fa2cec3">
+    <name>Тариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф (в БАЛЛАХ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение тарифа, по которому была оплачена эта аренда, в БАЛЛАХ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1d1eba9c-748a-41ff-80a0-d49ad58e9686">
+    <name>СуммаОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма оплаты (в БАЛЛАХ)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма оплаты в БАЛЛАХ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="765a50fb-e5c0-4564-a781-7b9940c9f6a5">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

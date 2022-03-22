@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88f5b4f6-8493-4b3d-ac1f-cfb7ea73cfcd">
+  <producedTypes>
+    <objectType typeId="ebeb39dc-1c75-4e0f-8acb-d02fe3610ef3" valueTypeId="ed2be714-8dc9-4043-aaff-3936f212bdb2"/>
+    <refType typeId="354f50cb-ca21-4384-9205-8a36a1b68bb6" valueTypeId="c8f6177e-864b-4228-86e0-a68a27e6245c"/>
+    <selectionType typeId="348d7eda-b135-4e05-b154-a78dbab258f7" valueTypeId="b724f2a5-3410-46ab-96a0-4ce62afb6027"/>
+    <listType typeId="f69050d3-a25d-41fb-abdd-ac7c89f54f77" valueTypeId="ac516ac5-97b0-4f2f-8eb6-07639c3b1562"/>
+    <managerType typeId="98a6cf9d-b590-4789-bbe3-0d67a3f4b604" valueTypeId="0e82980d-78e9-4126-aef2-2d6715b12a4f"/>
+  </producedTypes>
+  <name>НачалоАренды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начало аренды</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.НачалоАренды.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </synonym>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=6; ЧВН=; ЧГ=</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=6; ЧВН=; ЧГ=</value>
+    </editFormat>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата и время</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Начало аренды</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Начало аренды товара</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Начала аренды</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Начала аренды товаров</value>
+  </extendedListPresentation>
+  <numberLength>6</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.НачалоАренды.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="e7548254-f667-4554-ac9a-af84cd72a4f5">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь-арендатор.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2959f5f3-8f80-4213-865b-e8fafdcf46d6">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Товар, взятый в аренду.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2c856505-cf59-4149-9962-f712fa979c44">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

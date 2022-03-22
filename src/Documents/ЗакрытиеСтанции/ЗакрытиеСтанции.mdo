@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6799729-e1e7-433f-a711-f5290dde77e4">
+  <producedTypes>
+    <objectType typeId="aab64a9c-46bd-4984-bdb7-8bf8cf506f73" valueTypeId="25bf502d-b629-430a-bb7c-e380ba90b41d"/>
+    <refType typeId="d42574a3-f62b-4079-96e2-87d38f99afc6" valueTypeId="7d7dde54-4b42-4a37-9da3-724fe05179a9"/>
+    <selectionType typeId="51f9f921-19d1-4eef-8f14-dfcba62efc54" valueTypeId="8c9fbd2e-80bc-4d5f-9e7e-759effc73053"/>
+    <listType typeId="bc7031da-ca23-418f-b1c8-6a413f6b55c1" valueTypeId="aa5b7f51-d9e7-408d-ac86-3adf75cfc2b7"/>
+    <managerType typeId="5e922b34-88d3-4813-baf7-6dff54185df2" valueTypeId="30239b90-f8ca-4b23-bcf3-2f9387eb2693"/>
+  </producedTypes>
+  <name>ЗакрытиеСтанции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытие станции</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЗакрытиеСтанции.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Закрытие станции</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Закрытия станций</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЗакрытиеСтанции.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="8ad2e7b6-9e4b-41c9-93a9-1d811872d094">
+    <name>Станция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Станции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="df79c65e-637b-4f05-b60a-5cda095faa5d">
+    <name>Основание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыСтанций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="bcb83602-3923-4803-a7ff-231f380af811">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="8f51f6e7-3fbd-4b1e-baa7-2cf630b861ea">
+    <producedTypes>
+      <objectType typeId="da4849f1-9db8-481a-b9ab-f230eea89446" valueTypeId="7fc2eb6d-50dd-42f8-b15b-85c91e1ff54c"/>
+      <rowType typeId="1d2ceb1b-0ad2-4f38-b43b-d86b85d49835" valueTypeId="08fa3e1f-eed6-4292-9bd2-151333d00579"/>
+    </producedTypes>
+    <name>ТоварыДляПеремещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары для перемещения</value>
+    </synonym>
+    <attributes uuid="28ef7252-699c-4597-a772-f1636f14808c">
+      <name>ТоварНаСтанции</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар на станции</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="68521d9a-9fc7-420e-85f8-7249b7c840eb">
+      <name>СтанцияПеремещения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Станция перемещения</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Станции</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="67b6abeb-ea61-4013-bbc4-ed63bf819d63">
+  <producedTypes>
+    <refType typeId="091fe66a-9c0f-4733-a5ad-6722e61e07aa" valueTypeId="ecf8204a-1e00-46f3-a950-d6ed4f227223"/>
+    <listType typeId="f697d3d5-80c4-4e56-beff-6bbd73dd89f5" valueTypeId="5122f141-c427-4b82-ac63-09fe543581f2"/>
+    <managerType typeId="4d72e691-7885-4e8f-b797-314977727593" valueTypeId="68562f93-bf85-46d3-bd76-7ad96aaa6950"/>
+  </producedTypes>
+  <name>ПричиныПолученияБаллов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины получения бонусных баллов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Причины получения бонусных баллов</value>
+  </listPresentation>
+  <enumValues uuid="6b388583-67c5-4171-a0e6-08eb1eb7ccae">
+    <name>ЗаАренду</name>
+    <synonym>
+      <key>ru</key>
+      <value>За аренду</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cf648b55-fc02-4a39-9e64-22369528f04a">
+    <name>ЗаИвент</name>
+    <synonym>
+      <key>ru</key>
+      <value>За ивент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ab0ec5e1-bc15-4800-9f6a-794db6eec895">
+    <name>ПоРешениюСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>По решению сотрудника</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
