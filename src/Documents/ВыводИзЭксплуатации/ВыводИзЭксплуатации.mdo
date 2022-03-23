@@ -67,6 +67,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВыводИзЭксплуатации.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.СостояниеНоменклатуры</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="e1036f10-677c-48b6-93f8-019470fd39ca">

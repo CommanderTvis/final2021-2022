@@ -101,30 +101,23 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <tabularSections uuid="1a41154f-80be-4869-9ab5-7e475513c7a3">
-    <producedTypes>
-      <objectType typeId="fa5ad080-16a5-4ea0-b0b4-3f8c2382d83d" valueTypeId="0b6ff393-ab00-4551-868f-a18544fa5d76"/>
-      <rowType typeId="000f835b-f84f-4863-b99b-fe82c42a3a8e" valueTypeId="b92b7500-229e-4719-8725-ea15228602c5"/>
-    </producedTypes>
-    <name>Участники</name>
+  <attributes uuid="c84c1292-0df3-488b-87f5-aeedac4efbbb">
+    <name>Баллы</name>
     <synonym>
       <key>ru</key>
-      <value>Участники</value>
+      <value>Баллы</value>
     </synonym>
-    <attributes uuid="9fab4bba-f603-4b31-bb68-bc3c8f4f088f">
-      <name>Клиент</name>
-      <synonym>
-        <key>ru</key>
-        <value>Клиент</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.Клиенты</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
 </mdclass:Catalog>

@@ -161,10 +161,6 @@
     <dataPath xsi:type="form:DataPath">
       <segments>Объект.Товар</segments>
     </dataPath>
-    <handlers>
-      <event>OnChange</event>
-      <name>ТоварПриИзменении</name>
-    </handlers>
     <extendedTooltip>
       <name>ТоварРасширеннаяПодсказка</name>
       <id>12</id>
@@ -212,9 +208,6 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>Объект.Товар.Станция</segments>
-    </dataPath>
     <extendedTooltip>
       <name>ТоварСтанцияРасширеннаяПодсказка</name>
       <id>18</id>
@@ -240,20 +233,11 @@
       </userVisible>
       <autoFill>true</autoFill>
     </contextMenu>
-    <type>InputField</type>
     <readOnly>true</readOnly>
     <editMode>Enter</editMode>
     <showInHeader>true</showInHeader>
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
-    <extInfo xsi:type="form:InputFieldExtInfo">
-      <autoMaxWidth>true</autoMaxWidth>
-      <autoMaxHeight>true</autoMaxHeight>
-      <wrap>true</wrap>
-      <chooseType>true</chooseType>
-      <typeDomainEnabled>true</typeDomainEnabled>
-      <textEdit>true</textEdit>
-    </extInfo>
   </items>
   <autoCommandBar>
     <name>ФормаКоманднаяПанель</name>
@@ -266,10 +250,6 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
-  <handlers>
-    <event>OnCreateAtServer</event>
-    <name>ПриСозданииНаСервере</name>
-  </handlers>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>

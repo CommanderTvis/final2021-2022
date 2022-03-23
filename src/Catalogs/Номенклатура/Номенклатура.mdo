@@ -125,6 +125,7 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.Номенклатура.Form.ФормаСписка</defaultListForm>
   <attributes uuid="d44cf038-b19c-429c-9f65-9faa4eb9fae3">
     <name>ТипНоменклатуры</name>
     <synonym>
@@ -141,98 +142,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="ed8074d9-c80d-4330-9dde-789671a823a0">
-    <name>Используется</name>
-    <synonym>
-      <key>ru</key>
-      <value>Используется</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <format>
-      <key>ru</key>
-      <value>БЛ=Нет; БИ=Да</value>
-    </format>
-    <editFormat>
-      <key>ru</key>
-      <value>БЛ=Нет; БИ=Да</value>
-    </editFormat>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="ec4bf280-6fdb-4c2b-9d61-df21ae0b6bc1">
-    <name>Станция</name>
-    <synonym>
-      <key>ru</key>
-      <value>Станция</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Станции</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="891a2e7a-3602-40e2-956f-1072e93597b1">
-    <name>ДатаВводаВЭксплуатацию</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата ввода в эксплуатацию</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="204c2e4c-defe-470d-acd9-b075cb1846b5">
-    <name>ДатаВыводаИзЭксплуатации</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дата вывода из эксплуатации</value>
-    </synonym>
-    <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <forms uuid="3e05fe49-44df-435b-ade6-a5099393851e">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="9e92d411-9d8a-4e1c-83f8-940fb21360be">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="c9c297f4-c46d-4108-95ff-7e4dba2eb9bc">
     <name>ФормаВыбора</name>
     <synonym>
@@ -242,11 +151,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="0e26fb25-f4d1-4d3b-8213-00fb72eb0711">
-    <name>ФормаАренды</name>
+  <forms uuid="e2825af3-87d8-4419-b0b5-70f1945805cc">
+    <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
-      <value>Форма аренды</value>
+      <value>Форма списка</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

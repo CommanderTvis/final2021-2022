@@ -62,6 +62,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВводВЭксплуатацию.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.СостояниеНоменклатуры</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="f4db190a-58a6-428c-8cc5-c61f9a69ccff">
@@ -71,10 +72,7 @@
       <value>Товар</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>50</length>
-      </stringQualifiers>
+      <types>CatalogRef.Номенклатура</types>
     </type>
     <toolTip>
       <key>ru</key>
@@ -82,12 +80,11 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="b3e0b8e3-2e3c-41f4-a9d3-51c61f27895d">
+  <attributes uuid="223614fe-e907-48e8-9c6b-bf9875551e1a">
     <name>Станция</name>
     <synonym>
       <key>ru</key>
@@ -95,41 +92,6 @@
     </synonym>
     <type>
       <types>CatalogRef.Станции</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="441e442b-bdf5-49bf-a4a3-5898b42961d0">
-    <name>ТипНоменклатуры</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тип номенклатуры</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ТипыНоменклатуры</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="585ac312-0a3d-4e6b-a987-d544680c1063">
-    <name>Артикул</name>
-    <synonym>
-      <key>ru</key>
-      <value>Артикул</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>6</length>
-        <fixed>true</fixed>
-      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

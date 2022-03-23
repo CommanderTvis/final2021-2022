@@ -19,6 +19,14 @@
     <dataHistory>Use</dataHistory>
     <name>Date</name>
     <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ДФ=дд.ММ.гггг</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=дд.ММ.гггг</value>
+    </editFormat>
   </standardAttributes>
   <standardAttributes>
     <dataHistory>Use</dataHistory>

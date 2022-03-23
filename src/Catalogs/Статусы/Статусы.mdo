@@ -48,6 +48,43 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="29fff20f-3997-4ea9-a702-1e1f90ede2be">
+      <name>Новый</name>
+      <description>Новый</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="b7d5ebb9-a25f-4c4c-85a3-ebad8819f8b8">
+      <name>Обычный</name>
+      <description>Обычный</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="22de6bff-566f-465a-beb3-91bad9236e99">
+      <name>Частый</name>
+      <description>Частый</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="b0ef4472-5096-4bbb-a894-ec5651b28ef2">
+      <name>Постоянный</name>
+      <description>Постоянный</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="4eb97113-0961-4304-899e-9918f3a81360">
+      <name>VIP</name>
+      <description>VIP</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+  </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <attributes uuid="b6d49a3e-05be-4fd0-8a3d-cbb4ae03d368">

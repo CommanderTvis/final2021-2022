@@ -15,6 +15,20 @@
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.ПриостановкаРаботыСтанции.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ДФ=дд.ММ.гггг</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=дд.ММ.гггг</value>
+    </editFormat>
+  </standardAttributes>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
@@ -32,6 +46,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ПриостановкаРаботыСтанции.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.СтатусСтанций</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="4ab6d214-81c6-4bf4-87f2-903cda628aa4">

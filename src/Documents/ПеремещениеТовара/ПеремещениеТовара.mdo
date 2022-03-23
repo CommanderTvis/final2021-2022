@@ -42,6 +42,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ПеремещениеТовара.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.СостояниеНоменклатуры</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="8dcd8c76-ec57-4e8a-826c-b31eb84d67c9">

@@ -204,7 +204,6 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -241,59 +240,17 @@
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>19</length>
+        <length>16</length>
+        <fixed>true</fixed>
       </stringQualifiers>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Полный телефонный номер пользователя в международном формате.</value>
+      <value>Российский номер телефона пользователя.</value>
     </toolTip>
+    <mask>+7(999)999-99-99</mask>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="ca0cf12f-0c8c-47a6-80ce-41162ab4235e">
-    <name>КодСтраны</name>
-    <synonym>
-      <key>ru</key>
-      <value>Код страны в номере телефона</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.КодыСтран</types>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Код страны в номере телефона пользователя.</value>
-    </toolTip>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="5568a18a-0cd2-4e50-8489-bbb376804e37">
-    <name>Номер</name>
-    <synonym>
-      <key>ru</key>
-      <value>Номер</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>14</length>
-      </stringQualifiers>
-    </type>
-    <toolTip>
-      <key>ru</key>
-      <value>Номер телефона пользователя в стране.</value>
-    </toolTip>
-    <mask>(999)999-99-99</mask>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -313,20 +270,136 @@
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="dd1af63e-9cdf-4601-9dce-5abc63fc8706">
-    <name>ФормаЭлемента</name>
+  <attributes uuid="d40b6aaa-2b58-4b30-a03d-f7162644609b">
+    <name>ФИО</name>
     <synonym>
       <key>ru</key>
-      <value>Форма элемента</value>
+      <value>ФИО</value>
     </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>92</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5c355ecc-86a1-4c0e-a732-08638ca9648e">
+    <name>ИдентификаторПользователяИнформационнойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор пользователя информационной базы</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b7a95bd3-7a5f-494a-b69c-3ce6153bebe2">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="df2cda8c-884c-420c-b378-c0e25d1c0e2b">
+    <name>Пол</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пол</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>БЛ=Женский; БИ=Мужской</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>БЛ=Женский; БИ=Мужской</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1b340c48-fe92-4e98-bca3-009cb9256b1a">
+    <name>ДопНомерТелефона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп номер телефона</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>16</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <mask>+7(999)999-99-99</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d6875d14-20e6-439c-a089-bd0245e97d07">
+    <name>ДопЭлектроннаяПочта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп электронная почта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>320</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="62fe6c35-48da-4276-ab42-15863120716b">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="9260639a-72c6-437a-8141-7506678ddc32">
     <name>ФормаСписка</name>
     <synonym>
@@ -341,6 +414,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="197806ab-6f70-4df8-a8ff-3123294d4619">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

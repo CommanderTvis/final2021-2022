@@ -150,6 +150,14 @@
         <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=6; ЧГ=</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=6; ЧГ=</value>
+    </editFormat>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>

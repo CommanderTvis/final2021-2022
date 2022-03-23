@@ -16,6 +16,7 @@
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
+  <vendor>Академоны</vendor>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -43,23 +44,37 @@
   <subsystems>Subsystem.КонтрольКлиентскихДействий</subsystems>
   <subsystems>Subsystem.УправлениеНоменклатурой</subsystems>
   <subsystems>Subsystem.УправлениеСтанциями</subsystems>
+  <commonPictures>CommonPicture.ПечатьКотэ</commonPictures>
+  <commonPictures>CommonPicture.ФаксимилеАдмин</commonPictures>
+  <commonPictures>CommonPicture.ФаксимилеДиректор</commonPictures>
   <roles>Role.Администратор</roles>
+  <roles>Role.Пользователь</roles>
+  <roles>Role.Регистрация</roles>
+  <commonTemplates>CommonTemplate.ОтчетОРаботеСистемы</commonTemplates>
+  <commonTemplates>CommonTemplate.ЧекПоОперации</commonTemplates>
+  <commonModules>CommonModule.НастройкаИнтерфейсаВызовСервера</commonModules>
   <commonModules>CommonModule.ПользователиВызовСервера</commonModules>
   <commonModules>CommonModule.ПосылкаПочтыВызовСервера</commonModules>
   <commonModules>CommonModule.ПосылкаПочтыКлиент</commonModules>
   <commonModules>CommonModule.ПроверкаУникальностиВызовСервера</commonModules>
-  <commonModules>CommonModule.РегулярныеВыраженияВызовСервера</commonModules>
   <commonModules>CommonModule.РеквизитыФормыКлиентСервер</commonModules>
   <commonModules>CommonModule.СообщенияКлиентСервер</commonModules>
   <commonModules>CommonModule.СтрокиКлиентСервер</commonModules>
-  <constants>Constant.АдресПочтыКотэ</constants>
+  <commonForms>CommonForm.ЛКАренда</commonForms>
+  <commonForms>CommonForm.ЛКИвенты</commonForms>
+  <commonForms>CommonForm.ЛКИстория</commonForms>
+  <commonForms>CommonForm.ЛКПоддержка</commonForms>
+  <commonForms>CommonForm.ЛКСтанции</commonForms>
+  <commonForms>CommonForm.Регистрация</commonForms>
+  <commonForms>CommonForm.ФормаЛКПремиум</commonForms>
+  <commonForms>CommonForm.ФормаЛКСтандарт</commonForms>
   <catalogs>Catalog.Ивенты</catalogs>
   <catalogs>Catalog.Клиенты</catalogs>
-  <catalogs>Catalog.КодыСтран</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Сотрудники</catalogs>
   <catalogs>Catalog.Станции</catalogs>
   <catalogs>Catalog.Статусы</catalogs>
+  <catalogs>Catalog.ТемыПисем</catalogs>
   <catalogs>Catalog.ТипыНоменклатуры</catalogs>
   <documents>Document.ВводВЭксплуатацию</documents>
   <documents>Document.ВыводИзЭксплуатации</documents>
@@ -70,12 +85,17 @@
   <documents>Document.ОплатаАренды</documents>
   <documents>Document.ОткрытиеСтанции</documents>
   <documents>Document.ПеремещениеТовара</documents>
+  <documents>Document.ПодпискаНаСервис</documents>
   <documents>Document.ПолучениеБонусныхБаллов</documents>
+  <documents>Document.ПополнениеБаланса</documents>
   <documents>Document.ПриостановкаРаботыСтанции</documents>
   <enums>Enum.ОснованияВыводаТовараИзЭксплуатации</enums>
   <enums>Enum.ПричиныПолученияБаллов</enums>
   <enums>Enum.СтатусыСтанций</enums>
   <enums>Enum.УсловияПолученияСтатусов</enums>
+  <dataProcessors>DataProcessor.ЗагрузкаНоменклатуры</dataProcessors>
   <informationRegisters>InformationRegister.ПрайсПоТарифам</informationRegisters>
+  <informationRegisters>InformationRegister.СостояниеНоменклатуры</informationRegisters>
+  <informationRegisters>InformationRegister.СтатусСтанций</informationRegisters>
   <accumulationRegisters>AccumulationRegister.СтатистикаПользователей</accumulationRegisters>
 </mdclass:Configuration>
