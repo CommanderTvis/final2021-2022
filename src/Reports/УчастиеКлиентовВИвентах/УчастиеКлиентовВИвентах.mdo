@@ -10,8 +10,17 @@
     <value>Участие клиентов в ивентах</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.УчастиеКлиентовВИвентах.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
   <extendedPresentation>
     <key>ru</key>
     <value>Участие клиентов в ивентах и полученные баллы</value>
   </extendedPresentation>
+  <templates uuid="3f4810be-1dc6-4c32-adeb-046c631973d6">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
 </mdclass:Report>

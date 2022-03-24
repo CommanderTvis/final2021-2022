@@ -14,112 +14,69 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ВремяАрендыОстаток</dataPath>
-			<field>ВремяАрендыОстаток</field>
+			<dataPath>Ивент</dataPath>
+			<field>Ивент</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ЧислоАрендОстаток</dataPath>
-			<field>ЧислоАрендОстаток</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>РасходБаланса</dataPath>
-			<field>РасходБаланса</field>
+			<dataPath>ИвентБаллы</dataPath>
+			<field>ИвентБаллы</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	СУММА(СтатистикаПользователей.Баланс) КАК РасходБаланса,
-	СтатистикаПользователей.Клиент
-ПОМЕСТИТЬ РасходыБаланса
+	УчастиеВИвентах.Клиент КАК Клиент,
+	УчастиеВИвентах.Ивент КАК Ивент,
+	УчастиеВИвентах.Ивент.Баллы КАК ИвентБаллы
 ИЗ
-	РегистрНакопления.СтатистикаПользователей КАК СтатистикаПользователей
-ГДЕ
-	СтатистикаПользователей.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
-СГРУППИРОВАТЬ ПО
-	СтатистикаПользователей.Клиент
-;
-
-////////////////////////////////////////////////////////////////////////////////
-ВЫБРАТЬ
-	СтатистикаПользователейОстатки.ВремяАрендыОстаток,
-	СтатистикаПользователейОстатки.ЧислоАрендОстаток,
-	РасходыБаланса.РасходБаланса,
-	СтатистикаПользователейОстатки.Клиент
-ИЗ
-	РегистрНакопления.СтатистикаПользователей.Остатки КАК СтатистикаПользователейОстатки,
-	РасходыБаланса КАК РасходыБаланса</query>
+	РегистрСведений.УчастиеВИвентах КАК УчастиеВИвентах</query>
 	</dataSet>
-	<totalField>
-		<dataPath>ВремяАрендыОстаток</dataPath>
-		<expression>Сумма(ВремяАрендыОстаток)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>РасходБаланса</dataPath>
-		<expression>Сумма(РасходБаланса)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>ЧислоАрендОстаток</dataPath>
-		<expression>Сумма(ЧислоАрендОстаток)</expression>
-	</totalField>
-	<parameter>
-		<name>Период</name>
+	<calculatedField>
+		<dataPath>Ивент2</dataPath>
+		<expression>Ивент</expression>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Период</v8:content>
+				<v8:content>Ивент2</v8:content>
 			</v8:item>
 		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:nil="true"/>
-		<useRestriction>false</useRestriction>
-	</parameter>
-	<settingsVariant>
-		<dcsset:name>Основной</dcsset:name>
-		<dcsset:presentation xsi:type="v8:LocalStringType">
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ИвентБаллы2</dataPath>
+		<expression>ИвентБаллы</expression>
+		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Основной</v8:content>
+				<v8:content>Ивент баллы2</v8:content>
 			</v8:item>
-		</dcsset:presentation>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>Ивент2</dataPath>
+		<expression>Количество(Ивент2)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИвентБаллы2</dataPath>
+		<expression>Сумма(ИвентБаллы2)</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ЧислоАрендОстаток</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Кол-во</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
+					<dcsset:field>Ивент</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ВремяАрендыОстаток</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Время (минуты)</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>РасходБаланса</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сумма</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
+					<dcsset:field>Ивент.Баллы</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
 						<dcsset:field>Клиент</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
 						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
@@ -131,6 +88,23 @@
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Ивент</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>
 	</settingsVariant>
@@ -145,31 +119,10 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ЧислоАрендОстаток</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Кол-во</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
+					<dcsset:field>Ивент2</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ВремяАрендыОстаток</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Время (минуты)</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>РасходБаланса</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сумма</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
+					<dcsset:field>ИвентБаллы2</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:outputParameters>

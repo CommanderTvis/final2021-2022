@@ -313,6 +313,18 @@
 			<name>InteractiveClearDeletionMark</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.ВыводИзЭксплуатации</name>
@@ -330,6 +342,18 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -351,6 +375,18 @@
 			<name>InteractiveClearDeletionMark</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.ИзменениеПрайса</name>
@@ -368,6 +404,18 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -389,6 +437,18 @@
 			<name>InteractiveClearDeletionMark</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.ОкончаниеАренды</name>
@@ -406,6 +466,18 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -427,6 +499,18 @@
 			<name>InteractiveClearDeletionMark</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.ОтчетОРаботеСистемы</name>
@@ -444,6 +528,18 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -465,6 +561,18 @@
 			<name>InteractiveClearDeletionMark</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.ПеремещениеТовара</name>
@@ -482,6 +590,18 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -503,6 +623,18 @@
 			<name>InteractiveClearDeletionMark</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.ПолучениеБонусныхБаллов</name>
@@ -520,6 +652,18 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -541,6 +685,18 @@
 			<name>InteractiveClearDeletionMark</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.ПриостановкаРаботыСтанции</name>
@@ -560,6 +716,18 @@
 			<name>InteractiveClearDeletionMark</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.УчастиеВИвенте</name>
@@ -577,6 +745,111 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПланированиеИвента</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.СозданиеКлиента</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Должности</name>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMarkPredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>false</value>
 		</right>
 	</object>

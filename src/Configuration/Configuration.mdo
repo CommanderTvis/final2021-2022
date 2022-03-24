@@ -43,12 +43,14 @@
   <subsystems>Subsystem.АдминистрированиеМероприятий</subsystems>
   <subsystems>Subsystem.КонтрольКлиентскихДействий</subsystems>
   <subsystems>Subsystem.Отчеты</subsystems>
+  <subsystems>Subsystem.Сотрудники</subsystems>
   <subsystems>Subsystem.УправлениеНоменклатурой</subsystems>
   <subsystems>Subsystem.УправлениеСтанциями</subsystems>
   <commonPictures>CommonPicture.ПечатьКотэ</commonPictures>
   <commonPictures>CommonPicture.ФаксимилеАдмин</commonPictures>
   <commonPictures>CommonPicture.ФаксимилеДиректор</commonPictures>
   <roles>Role.Администратор</roles>
+  <roles>Role.КрутойАдмин</roles>
   <roles>Role.МастерСтанции</roles>
   <roles>Role.Менеджер</roles>
   <roles>Role.Оператор</roles>
@@ -91,10 +93,12 @@
   <documents>Document.ОткрытиеСтанции</documents>
   <documents>Document.ОтчетОРаботеСистемы</documents>
   <documents>Document.ПеремещениеТовара</documents>
+  <documents>Document.ПланированиеИвента</documents>
   <documents>Document.ПодпискаНаСервис</documents>
   <documents>Document.ПолучениеБонусныхБаллов</documents>
   <documents>Document.ПополнениеБаланса</documents>
   <documents>Document.ПриостановкаРаботыСтанции</documents>
+  <documents>Document.СозданиеКлиента</documents>
   <documents>Document.УчастиеВИвенте</documents>
   <enums>Enum.ОснованияВыводаТовараИзЭксплуатации</enums>
   <enums>Enum.ПричиныПолученияБаллов</enums>

@@ -8,4 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.Ивенты</content>
+  <content>Document.ПланированиеИвента</content>
+  <content>Document.УчастиеВИвенте</content>
 </mdclass:Subsystem>

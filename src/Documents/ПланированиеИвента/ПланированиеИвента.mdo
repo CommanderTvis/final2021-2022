@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f093d88-5389-40ed-bea9-e6debe7388c3">
+  <producedTypes>
+    <objectType typeId="a63199c8-75c8-40fd-a790-461697637b2c" valueTypeId="85388bab-3486-4376-a422-df14bc41139c"/>
+    <refType typeId="2445f472-a94b-44ed-a314-09929f6bb779" valueTypeId="b93c0c45-f4d3-4300-8d83-1f8c9a0e755c"/>
+    <selectionType typeId="716cf59a-7149-4351-a2d6-2b45cf939302" valueTypeId="69e6a02c-4a67-482f-a49e-ef7f69d6a29f"/>
+    <listType typeId="a0670850-eead-47ac-ab78-f533fe2f949f" valueTypeId="8f4137ad-5070-48e6-aa46-817bcc0cd882"/>
+    <managerType typeId="b1203b29-b042-4691-b794-5051e9611157" valueTypeId="51cd4b91-ba20-41cb-ac88-977423f48f3c"/>
+  </producedTypes>
+  <name>ПланированиеИвента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планирование ивента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПланированиеИвента.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Планирование ивента</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Планирования ивентов</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПланированиеИвента.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="50a2b3ed-9f42-49a0-9bf5-252f2192aea7">
+    <name>Ивент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ивент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Ивенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="4c8f5d86-67fb-4497-8ae5-ccf462fcae9f">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>
