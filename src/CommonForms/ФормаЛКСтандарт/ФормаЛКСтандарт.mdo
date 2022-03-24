@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cca428b4-fed6-48fd-a16e-09a8b9ff7e9b">
+  <name>ФормаЛКСтандарт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Личный кабинет</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

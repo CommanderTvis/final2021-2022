@@ -46,13 +46,13 @@
     "right-output-to-printer-file-clipboard": {
       "enabled": false
     },
+    "right-interactive-delete": {
+      "enabled": false
+    },
     "right-update-database-configuration": {
       "enabled": false
     },
     "right-start-thick-client": {
-      "enabled": false
-    },
-    "right-interactive-delete": {
       "enabled": false
     },
     "right-all-functions-mode": {
@@ -67,10 +67,10 @@
     "right-start-web-client": {
       "enabled": false
     },
-    "right-interactive-open-external-reports": {
+    "right-save-user-data": {
       "enabled": false
     },
-    "right-save-user-data": {
+    "right-interactive-open-external-reports": {
       "enabled": false
     }
   }

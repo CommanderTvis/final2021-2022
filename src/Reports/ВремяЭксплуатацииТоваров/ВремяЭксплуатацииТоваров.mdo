@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec0a18ed-7917-4c69-8161-bebede2b6776">
+  <producedTypes>
+    <objectType typeId="f6a3eda9-667b-408c-957e-60a40867bdb6" valueTypeId="5d952a3a-a26a-4805-b344-92f7bee9916b"/>
+    <managerType typeId="58c6e7e6-cb92-41fb-8c4c-bf767c85fb20" valueTypeId="c5064da7-3f74-4e06-8f35-9fa9ee276c51"/>
+  </producedTypes>
+  <name>ВремяЭксплуатацииТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время эксплуатации товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВремяЭксплуатацииТоваров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Суммарное время эксплуатации товаров</value>
+  </extendedPresentation>
+  <templates uuid="45f523ab-45d3-4029-8c39-9cbf643b5247">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

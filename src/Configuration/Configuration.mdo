@@ -42,12 +42,16 @@
   </languages>
   <subsystems>Subsystem.АдминистрированиеМероприятий</subsystems>
   <subsystems>Subsystem.КонтрольКлиентскихДействий</subsystems>
+  <subsystems>Subsystem.Отчеты</subsystems>
   <subsystems>Subsystem.УправлениеНоменклатурой</subsystems>
   <subsystems>Subsystem.УправлениеСтанциями</subsystems>
   <commonPictures>CommonPicture.ПечатьКотэ</commonPictures>
   <commonPictures>CommonPicture.ФаксимилеАдмин</commonPictures>
   <commonPictures>CommonPicture.ФаксимилеДиректор</commonPictures>
   <roles>Role.Администратор</roles>
+  <roles>Role.МастерСтанции</roles>
+  <roles>Role.Менеджер</roles>
+  <roles>Role.Оператор</roles>
   <roles>Role.Пользователь</roles>
   <roles>Role.Регистрация</roles>
   <commonTemplates>CommonTemplate.ОтчетОРаботеСистемы</commonTemplates>
@@ -68,6 +72,7 @@
   <commonForms>CommonForm.Регистрация</commonForms>
   <commonForms>CommonForm.ФормаЛКПремиум</commonForms>
   <commonForms>CommonForm.ФормаЛКСтандарт</commonForms>
+  <catalogs>Catalog.Должности</catalogs>
   <catalogs>Catalog.Ивенты</catalogs>
   <catalogs>Catalog.Клиенты</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
@@ -84,18 +89,26 @@
   <documents>Document.ОкончаниеАренды</documents>
   <documents>Document.ОплатаАренды</documents>
   <documents>Document.ОткрытиеСтанции</documents>
+  <documents>Document.ОтчетОРаботеСистемы</documents>
   <documents>Document.ПеремещениеТовара</documents>
   <documents>Document.ПодпискаНаСервис</documents>
   <documents>Document.ПолучениеБонусныхБаллов</documents>
   <documents>Document.ПополнениеБаланса</documents>
   <documents>Document.ПриостановкаРаботыСтанции</documents>
+  <documents>Document.УчастиеВИвенте</documents>
   <enums>Enum.ОснованияВыводаТовараИзЭксплуатации</enums>
   <enums>Enum.ПричиныПолученияБаллов</enums>
   <enums>Enum.СтатусыСтанций</enums>
   <enums>Enum.УсловияПолученияСтатусов</enums>
+  <reports>Report.АрендаТоваров</reports>
+  <reports>Report.ВремяАрендыТоваров</reports>
+  <reports>Report.ВремяРаботыСтанций</reports>
+  <reports>Report.ВремяЭксплуатацииТоваров</reports>
+  <reports>Report.УчастиеКлиентовВИвентах</reports>
   <dataProcessors>DataProcessor.ЗагрузкаНоменклатуры</dataProcessors>
   <informationRegisters>InformationRegister.ПрайсПоТарифам</informationRegisters>
   <informationRegisters>InformationRegister.СостояниеНоменклатуры</informationRegisters>
   <informationRegisters>InformationRegister.СтатусСтанций</informationRegisters>
+  <informationRegisters>InformationRegister.УчастиеВИвентах</informationRegisters>
   <accumulationRegisters>AccumulationRegister.СтатистикаПользователей</accumulationRegisters>
 </mdclass:Configuration>

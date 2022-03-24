@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65d48d67-b2a3-4721-b8fa-729e0cf3533d">
+  <producedTypes>
+    <objectType typeId="beae90e3-d044-435f-aa6f-374170212bbc" valueTypeId="8f7d54fa-c81a-46c0-8ac6-3522b8ab6769"/>
+    <refType typeId="b5685ec8-e61b-40a7-ba99-4b44de1f5330" valueTypeId="6b50845b-2d55-4948-839b-69785a934be6"/>
+    <selectionType typeId="0ae1566b-4db4-423e-be48-392ff7e4c358" valueTypeId="363cdcea-e39c-45fc-b7f1-183dfd8e4472"/>
+    <listType typeId="44a014b4-cd65-425b-ae02-eeb975141c9f" valueTypeId="14988d11-b59b-450e-82ce-f39a42b4c71e"/>
+    <managerType typeId="900b2328-731c-4698-979c-ee7a82bc1dd1" valueTypeId="47e5201b-4751-45e9-9869-c8ae807b6bcc"/>
+  </producedTypes>
+  <name>ТемыПисем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Темы писем</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТемыПисем.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ТемыПисем.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Тема письма</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Тема письма в службу поддержки</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Темы писем</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="d1c9357d-df56-4256-b19d-b8615d976b4c">
+      <name>ТоварСломан</name>
+      <description>Товар сломан</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="5581f97d-bac8-493d-b4c4-78eea90633aa">
+      <name>НеПоступилиБаллыЗаИвент</name>
+      <description>Не поступили баллы за ивент</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="c03dd53f-44ff-40c1-8997-2e4bf414a4e4">
+      <name>ЖалобаНаСотрудников</name>
+      <description>Жалоба на сотрудников</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="2fa7bd60-eb89-474e-b623-eddfe88444c4">
+      <name>Другое</name>
+      <description>Другое</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

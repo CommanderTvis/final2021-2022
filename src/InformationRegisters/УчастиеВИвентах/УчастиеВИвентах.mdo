@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07182424-6df6-4034-9943-7dbac8277886">
+  <producedTypes>
+    <selectionType typeId="a2bdf9af-aea8-4025-add0-f17459a941a0" valueTypeId="e62bb0a0-ca5c-40e6-a0df-900267f26ce8"/>
+    <listType typeId="85f4e47b-65bd-4fcf-9366-1e2bfa98155b" valueTypeId="37f5172a-5240-4641-a5dd-f1bbe27261f8"/>
+    <managerType typeId="bc014ad6-86b5-4ed2-8609-25dd36dda79b" valueTypeId="bab57493-9698-421c-bdc2-14dd7efb1bc2"/>
+    <recordSetType typeId="ecd9036e-67bd-432d-b710-d30c7a4681e5" valueTypeId="e09771de-17a9-4ef2-8828-5f1c11e47f25"/>
+    <recordKeyType typeId="34d67a53-aa94-42d0-944e-62b87b3abe57" valueTypeId="58a658bf-8ece-454f-91a0-ab35d9357b5a"/>
+    <recordType typeId="f7ead010-d2d2-4e4f-b95c-b6ced063da6a" valueTypeId="36861280-b303-4165-be4b-a790a81c6895"/>
+    <recordManagerType typeId="253c9017-b213-4b08-a9ef-d676dff38a29" valueTypeId="7c85b9d3-7f24-45ae-a32c-6719c581b32d"/>
+  </producedTypes>
+  <name>УчастиеВИвентах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Участие в ивентах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Участие в ивенте</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Участия в ивентах</value>
+  </listPresentation>
+  <dimensions uuid="8aca45c7-e13c-4091-bc85-055177a4ef25">
+    <name>Ивент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ивент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Ивенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3b569b02-b425-4729-af92-fe0bd78a14b4">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

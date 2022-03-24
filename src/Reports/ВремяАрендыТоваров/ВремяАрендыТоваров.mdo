@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00071223-9648-4ce5-afb4-3b33addaa098">
+  <producedTypes>
+    <objectType typeId="ce793017-c5f8-416c-8c3a-84866a1a1a00" valueTypeId="7801b676-22fb-412d-be9b-18115bd36d59"/>
+    <managerType typeId="85e85240-d202-4582-a04d-3a3218848ac6" valueTypeId="b18ada15-a83c-4a2b-a6a1-717dec826cfb"/>
+  </producedTypes>
+  <name>ВремяАрендыТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время аренды товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВремяАрендыТоваров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Суммарное время аренды товаров</value>
+  </extendedPresentation>
+  <templates uuid="0b4645b9-8118-4d39-a1ef-166b0a6a0f21">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

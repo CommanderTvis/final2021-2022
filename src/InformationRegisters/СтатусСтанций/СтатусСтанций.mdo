@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e71f4ef1-f7eb-4f60-b4be-b691eb1cfeb4">
+  <producedTypes>
+    <selectionType typeId="5bc86119-0406-4ffa-808c-66a988415f87" valueTypeId="db925f9c-bfee-4770-b07e-7cbfabd4f397"/>
+    <listType typeId="4c0c47ba-ae5a-4f41-82b0-d29849878d2b" valueTypeId="0e6d4eb5-e99b-4c6e-8d54-880cfd2e0d17"/>
+    <managerType typeId="1ff42bd6-fcd0-4162-84e1-d1f0c1745d05" valueTypeId="f4351daf-34ce-4074-b37b-d5aee9825068"/>
+    <recordSetType typeId="2287f088-898e-4c74-b014-125b157f88f8" valueTypeId="0e936671-affc-4711-89ef-2fbe2ffb42c3"/>
+    <recordKeyType typeId="11a1a6ea-1f96-464d-a141-37861d517ef9" valueTypeId="121bec57-6637-42be-913e-37fcff36529c"/>
+    <recordType typeId="242032ab-65cc-42a1-92d7-93bf2ef31ebb" valueTypeId="96fbc087-1a68-46fe-9e22-90163f49245f"/>
+    <recordManagerType typeId="6a3cb8dc-9d12-47a5-9699-4b2186f9434a" valueTypeId="33da2136-7689-49b2-a28d-443d2e262c52"/>
+  </producedTypes>
+  <name>СтатусСтанций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус станций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <listPresentation>
+    <key>ru</key>
+    <value>Статус станций</value>
+  </listPresentation>
+  <resources uuid="f1d312b4-6239-43ce-819c-c6593d50a7f4">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыСтанций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cac6670b-f27a-4490-92f4-1288b44f1b2f">
+    <name>Станция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Станции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

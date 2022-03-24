@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e862271d-dbf6-470c-9c27-80728ff5b6bd">
+  <producedTypes>
+    <objectType typeId="2a6abe22-673d-4aa8-b93e-23f1b44de8b3" valueTypeId="52e85ed6-326e-4c37-b76c-a1e25a9778aa"/>
+    <refType typeId="8929a99d-34b8-44ee-9e78-aef57d6b5086" valueTypeId="cc82c312-bc67-4f08-a796-91101c19c0fd"/>
+    <selectionType typeId="0326825f-3843-4bb2-8a45-2353ad150983" valueTypeId="0f326794-841e-49c0-8bc6-a35716ed2d29"/>
+    <listType typeId="896e9dc2-d201-48d0-a7db-9658c3269944" valueTypeId="99bf99e9-91ee-4ddf-b786-ce0e8d78d614"/>
+    <managerType typeId="5879a655-5bc7-400e-9c73-671536201d80" valueTypeId="f62f5f33-488f-41b1-9bec-7d591102e754"/>
+  </producedTypes>
+  <name>Должности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Должности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Должности.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Должности.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Должность</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Должность сотрудников</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Должности</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Должности сотрудников</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="dd0a91af-16b6-4092-b690-c9b7f2a5569d">
+      <name>Администратор</name>
+      <description>Администратор</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="280868ad-93c2-4768-b9ce-1e99ed03932d">
+      <name>Менеджер</name>
+      <description>Менеджер</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="27bacf84-27b9-44c2-865c-fac01b56a3e5">
+      <name>Оператор</name>
+      <description>Оператор</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="7ffd90f0-c01d-4a7f-b671-2ba4c271bc51">
+      <name>МастерСтанции</name>
+      <description>Мастер станции</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

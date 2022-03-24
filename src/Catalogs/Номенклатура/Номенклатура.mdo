@@ -124,8 +124,10 @@
   <checkUnique>true</checkUnique>
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
   <defaultListForm>Catalog.Номенклатура.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Номенклатура.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="d44cf038-b19c-429c-9f65-9faa4eb9fae3">
     <name>ТипНоменклатуры</name>
     <synonym>
@@ -142,20 +144,20 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="c9c297f4-c46d-4108-95ff-7e4dba2eb9bc">
-    <name>ФормаВыбора</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма выбора</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
   <forms uuid="e2825af3-87d8-4419-b0b5-70f1945805cc">
     <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
       <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9d4fc929-1e27-4d2a-8690-5536f8d46f2f">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

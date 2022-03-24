@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7f2ceae-8dd3-46a3-a80d-8e89223e3bb5">
+  <producedTypes>
+    <selectionType typeId="50857b2a-d6a1-484d-ba63-2e32418ab19b" valueTypeId="723c178c-e0f6-4020-afd3-22a1018934c1"/>
+    <listType typeId="b69abf96-5100-4a89-bce7-9408e31e0167" valueTypeId="ad7f8ebc-364e-46c2-bb6b-d565ff69be80"/>
+    <managerType typeId="06dfcf3e-918c-4f31-b071-f024dfd0772e" valueTypeId="507edca0-f0aa-4b09-b35d-822a85a98632"/>
+    <recordSetType typeId="b1b29231-fc13-4396-b550-8ff3adee61ee" valueTypeId="7e521f23-3ee6-4419-97dd-beee237e7848"/>
+    <recordKeyType typeId="2aa0aaa5-45d3-487b-8c3d-30a0d647e3d4" valueTypeId="ec439162-3f60-425c-bf57-1a04c06b9d9d"/>
+    <recordType typeId="d0bf98db-a8b7-4159-a52f-ee774398fc37" valueTypeId="35d5d707-27d8-4478-bc63-3795c4c6b41d"/>
+    <recordManagerType typeId="ee20c2ac-a8ae-4e0e-bdbf-6a069f5d8fae" valueTypeId="d0fdee80-bf80-4e67-b155-20c409b2b405"/>
+  </producedTypes>
+  <name>СостояниеНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние номенклатуры</value>
+  </synonym>
+  <comment>Описывает все возможные состояния номенклатуры</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="b665adb7-15f6-4200-ad6a-4f7113983ab6">
+    <name>Арендатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Арендатор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ed342d4c-9fe4-4674-ad6b-2493fe2becac">
+    <name>Станция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Станция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Станции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bfc0782c-0ede-4c20-9048-54f5fb03df41">
+    <name>СостояниеЭксплуатации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние эксплуатации</value>
+    </synonym>
+    <comment>Пустая ссылка - все нормально, иначе см. основание</comment>
+    <type>
+      <types>EnumRef.ОснованияВыводаТовараИзЭксплуатации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a8635efa-ab6c-40b7-a96e-19a93efe3cb3">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

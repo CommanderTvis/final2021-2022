@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="50295f30-8346-4808-bfd7-9d317d36ffe4">
+  <producedTypes>
+    <objectType typeId="808934da-1092-4f22-887d-88223f19bbfc" valueTypeId="5cd9adad-3524-436d-b068-16f4ea010693"/>
+    <refType typeId="7bca4b98-f299-429d-ad67-ea78a44e03e9" valueTypeId="a830de3b-83c7-428c-b24c-5f61388980ad"/>
+    <selectionType typeId="71c87a32-88ad-40ff-b882-baa9b8745081" valueTypeId="80b54496-696e-479e-8bcf-933119b4d5f7"/>
+    <listType typeId="cb2337aa-fe6b-4272-8beb-e32ccf171f12" valueTypeId="4b756beb-d483-4632-87a0-e63d168757a9"/>
+    <managerType typeId="b4e1940c-3f7b-4974-93cc-bb61fdf3303a" valueTypeId="953e0789-3d4a-4d1c-a3d7-8c23bd053852"/>
+  </producedTypes>
+  <name>ОтчетОРаботеСистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет о работе системы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОтчетОРаботеСистемы.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <commands uuid="a56dfcd7-9a9e-4915-a583-8b269178abe7">
+    <name>Печать</name>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ОтчетОРаботеСистемы</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

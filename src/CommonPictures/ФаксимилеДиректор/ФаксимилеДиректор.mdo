@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6cb189b-1c1f-4f33-aeae-031eb8e77ebe">
+  <name>ФаксимилеДиректор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Факсимиле директор</value>
+  </synonym>
+</mdclass:CommonPicture>

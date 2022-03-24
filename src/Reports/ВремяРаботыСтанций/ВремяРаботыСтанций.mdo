@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e23b7f62-42b1-4fb5-8bcc-f47890c625e7">
+  <producedTypes>
+    <objectType typeId="1ad2bfe4-9452-4266-b8e4-eb1539251396" valueTypeId="0fd21d40-69a4-428f-8293-7c098fccdc5f"/>
+    <managerType typeId="38b01d4b-191d-464c-a107-2b9779461103" valueTypeId="8da3b673-42cf-4fd4-b2dd-8ac9f4682226"/>
+  </producedTypes>
+  <name>ВремяРаботыСтанций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время работы станций</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВремяРаботыСтанций.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="2bf15801-b28e-46fd-ba5f-5d363e5d601d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

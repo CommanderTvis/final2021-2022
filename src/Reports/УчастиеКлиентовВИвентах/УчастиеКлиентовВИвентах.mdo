@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af09efb5-9fd1-457d-ac12-5a51ac2ff025">
+  <producedTypes>
+    <objectType typeId="30106fb9-1484-462f-8754-ee202d539241" valueTypeId="6d6f7825-a10b-4c49-83eb-785a0719b7ab"/>
+    <managerType typeId="8752f2b1-796e-4ac3-be28-5feff4f795be" valueTypeId="e0f521c9-f3a2-40bf-ba9f-9a8361993dff"/>
+  </producedTypes>
+  <name>УчастиеКлиентовВИвентах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Участие клиентов в ивентах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Участие клиентов в ивентах и полученные баллы</value>
+  </extendedPresentation>
+</mdclass:Report>

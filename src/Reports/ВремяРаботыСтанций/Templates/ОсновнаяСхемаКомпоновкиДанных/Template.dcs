@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Станция</dataPath>
+			<field>Станция</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяЭксплуатации</dataPath>
+			<field>ВремяЭксплуатации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время эксплуатации</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СтатусСтанций.Станция,
+	СтатусСтанций.Период
+ПОМЕСТИТЬ Открытия
+ИЗ
+	РегистрСведений.СтатусСтанций КАК СтатусСтанций
+ГДЕ
+	СтатусСтанций.Состояние = ЗНАЧЕНИЕ(Перечисление.СтатусыСтанций.Ок)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СтатусСтанций.Период,
+	СтатусСтанций.Станция
+ПОМЕСТИТЬ Закрытия
+ИЗ
+	РегистрСведений.СтатусСтанций КАК СтатусСтанций
+ГДЕ
+	СтатусСтанций.Состояние &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыСтанций.Ок)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Открытия.Станция,
+	Открытия.Период КАК НачалоРаботы,
+	ВЫРАЗИТЬ(ЕСТЬNULL(Закрытия.Период, &amp;ТекущаяДата) КАК ДАТА) КАК ОкончаниеРаботы
+ПОМЕСТИТЬ ОткрытияЗакрытия
+ИЗ
+	Открытия КАК Открытия
+		ЛЕВОЕ СОЕДИНЕНИЕ Закрытия КАК Закрытия
+		ПО Открытия.Период &lt;= Закрытия.Период
+		И Закрытия.Станция = Открытия.Станция
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОткрытияЗакрытия.Станция,
+	ОткрытияЗакрытия.НачалоРаботы,
+	МИНИМУМ(ОткрытияЗакрытия.ОкончаниеРаботы) КАК ОкончаниеРаботы
+ПОМЕСТИТЬ ОткрытияБлижайшиеЗакрытия
+ИЗ
+	ОткрытияЗакрытия КАК ОткрытияЗакрытия
+СГРУППИРОВАТЬ ПО
+	ОткрытияЗакрытия.НачалоРаботы,
+	ОткрытияЗакрытия.Станция
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОткрытияБлижайшиеЗакрытия.Станция,
+	СУММА(РАЗНОСТЬДАТ(ОткрытияБлижайшиеЗакрытия.НачалоРаботы, ОткрытияБлижайшиеЗакрытия.ОкончаниеРаботы, ДЕНЬ)) КАК
+		ВремяЭксплуатации
+ИЗ
+	ОткрытияБлижайшиеЗакрытия КАК ОткрытияБлижайшиеЗакрытия
+СГРУППИРОВАТЬ ПО
+	ОткрытияБлижайшиеЗакрытия.Станция</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ВремяЭксплуатации</dataPath>
+		<expression>Сумма(ВремяЭксплуатации)</expression>
+	</totalField>
+	<parameter>
+		<name>ТекущаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДатаСеанса()</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяЭксплуатации</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время работы (в днях)</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Станция</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ВремяЭксплуатации</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:ChartType">Column3D</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemChart">
+				<dcsset:point>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Станция</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Станция.Код</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:point>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

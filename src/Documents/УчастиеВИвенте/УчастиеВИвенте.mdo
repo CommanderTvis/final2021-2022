@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d04c1a9f-68f3-4dcd-8f16-1ae7dd72881e">
+  <producedTypes>
+    <objectType typeId="eda91f96-35bf-40fe-8928-cfc3b432fe75" valueTypeId="f8b6777c-a516-4c12-a5c4-ca9430defafa"/>
+    <refType typeId="3e0afe57-4e66-463f-8537-9c83f596c413" valueTypeId="fe77c151-7dfb-4e17-9a0c-30ab8bdafef7"/>
+    <selectionType typeId="f98db6ee-cf8e-4d36-84b8-1cf58c02f9a8" valueTypeId="09667800-bdb9-40be-9045-8a6bc3afe19c"/>
+    <listType typeId="a6414188-fc3f-4853-a16c-4d4c7138f45d" valueTypeId="66dda89a-1c22-48fa-8645-ee755ad9e328"/>
+    <managerType typeId="98cfee35-324a-4368-931a-6b4e9e8ab74d" valueTypeId="7ca775fd-29a9-44f6-baa4-f7e1d909e42c"/>
+  </producedTypes>
+  <name>УчастиеВИвенте</name>
+  <synonym>
+    <key>ru</key>
+    <value>Участие в ивенте</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УчастиеВИвенте.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </synonym>
+    <fullTextSearch>Use</fullTextSearch>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ДФ=дд.ММ.гггг</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=дд.ММ.гггг</value>
+    </editFormat>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Участие в ивенте</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Участие клиента в ивенте</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Участия в ивентах</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Участия клиенттов в ивентах</value>
+  </extendedListPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>InformationRegister.УчастиеВИвентах</registerRecords>
+  <registerRecords>AccumulationRegister.СтатистикаПользователей</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="e4aa561a-930b-4ee9-a6c4-b6f1dc8ea05c">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a9c37b6a-0db9-4261-9002-e7cbbb357fdf">
+    <name>Ивент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ивент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Ивенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

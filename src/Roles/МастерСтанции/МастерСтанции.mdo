@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cf8a5c6-58c3-4166-9dd7-fb44d342df53">
+  <name>МастерСтанции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мастер станции</value>
+  </synonym>
+</mdclass:Role>

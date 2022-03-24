@@ -233,7 +233,7 @@
   </items>
   <items xsi:type="form:Table">
     <name>ДоступнаяНоменклатура</name>
-    <id>13</id>
+    <id>67</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -245,7 +245,7 @@
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
       <name>ДоступнаяНоменклатураТоварСсылкаКод</name>
-      <id>58</id>
+      <id>89</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -256,7 +256,7 @@
       </dataPath>
       <extendedTooltip>
         <name>ДоступнаяНоменклатураТоварСсылкаКодРасширеннаяПодсказка</name>
-        <id>60</id>
+        <id>91</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -271,7 +271,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>ДоступнаяНоменклатураТоварСсылкаКодКонтекстноеМеню</name>
-        <id>59</id>
+        <id>90</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -295,7 +295,7 @@
     </items>
     <items xsi:type="form:FormField">
       <name>ДоступнаяНоменклатураТоварСсылкаНаименование</name>
-      <id>61</id>
+      <id>92</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -306,7 +306,7 @@
       </dataPath>
       <extendedTooltip>
         <name>ДоступнаяНоменклатураТоварСсылкаНаименованиеРасширеннаяПодсказка</name>
-        <id>63</id>
+        <id>94</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -321,7 +321,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>ДоступнаяНоменклатураТоварСсылкаНаименованиеКонтекстноеМеню</name>
-        <id>62</id>
+        <id>93</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -345,7 +345,7 @@
     </items>
     <items xsi:type="form:FormField">
       <name>ДоступнаяНоменклатураТариф</name>
-      <id>64</id>
+      <id>83</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -356,7 +356,7 @@
       </dataPath>
       <extendedTooltip>
         <name>ДоступнаяНоменклатураТарифРасширеннаяПодсказка</name>
-        <id>66</id>
+        <id>85</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -371,7 +371,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>ДоступнаяНоменклатураТарифКонтекстноеМеню</name>
-        <id>65</id>
+        <id>84</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -395,7 +395,7 @@
     </items>
     <autoCommandBar>
       <name>ДоступнаяНоменклатураКоманднаяПанель</name>
-      <id>14</id>
+      <id>68</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -411,10 +411,10 @@
         <common>true</common>
       </userVisible>
       <name>ДоступнаяНоменклатураСтрокаПоиска</name>
-      <id>17</id>
+      <id>71</id>
       <extendedTooltip>
         <name>ДоступнаяНоменклатураСтрокаПоискаРасширеннаяПодсказка</name>
-        <id>19</id>
+        <id>73</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -429,7 +429,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>ДоступнаяНоменклатураСтрокаПоискаКонтекстноеМеню</name>
-        <id>18</id>
+        <id>72</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -448,10 +448,10 @@
         <common>true</common>
       </userVisible>
       <name>ДоступнаяНоменклатураСостояниеПросмотра</name>
-      <id>23</id>
+      <id>77</id>
       <extendedTooltip>
         <name>ДоступнаяНоменклатураСостояниеПросмотраРасширеннаяПодсказка</name>
-        <id>25</id>
+        <id>79</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -466,7 +466,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>ДоступнаяНоменклатураСостояниеПросмотраКонтекстноеМеню</name>
-        <id>24</id>
+        <id>78</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -486,10 +486,10 @@
         <common>true</common>
       </userVisible>
       <name>ДоступнаяНоменклатураУправлениеПоиском</name>
-      <id>20</id>
+      <id>74</id>
       <extendedTooltip>
         <name>ДоступнаяНоменклатураУправлениеПоискомРасширеннаяПодсказка</name>
-        <id>22</id>
+        <id>76</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -504,7 +504,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>ДоступнаяНоменклатураУправлениеПоискомКонтекстноеМеню</name>
-        <id>21</id>
+        <id>75</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -519,7 +519,7 @@
     </searchControlAddition>
     <extendedTooltip>
       <name>ДоступнаяНоменклатураРасширеннаяПодсказка</name>
-      <id>16</id>
+      <id>70</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -534,7 +534,7 @@
     </extendedTooltip>
     <contextMenu>
       <name>ДоступнаяНоменклатураКонтекстноеМеню</name>
-      <id>15</id>
+      <id>69</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -582,6 +582,10 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
   <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
@@ -625,8 +629,6 @@
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
 	СостояниеНоменклатурыСрезПоследних.Товар.Ссылка,
-	СостояниеНоменклатурыСрезПоследних.Товар.Код,
-	СостояниеНоменклатурыСрезПоследних.Товар.Наименование,
 	ПрайсПоТарифамСрезПоследних.Тариф
 ИЗ
 	РегистрСведений.СостояниеНоменклатуры.СрезПоследних КАК СостояниеНоменклатурыСрезПоследних,
@@ -635,7 +637,8 @@
 	СостояниеНоменклатурыСрезПоследних.Станция = &amp;Станция
 	И
 		СостояниеНоменклатурыСрезПоследних.СостояниеЭксплуатации = ЗНАЧЕНИЕ(Перечисление.ОснованияВыводаТовараИзЭксплуатации.ПустаяСсылка)
-	И СостояниеНоменклатурыСрезПоследних.Арендатор = ЗНАЧЕНИЕ(Справочник.Клиенты.ПустаяСсылка)</queryText>
+	И СостояниеНоменклатурыСрезПоследних.Арендатор = ЗНАЧЕНИЕ(Справочник.Клиенты.ПустаяСсылка)
+	И ПрайсПоТарифамСрезПоследних.ТипНоменклатуры = СостояниеНоменклатурыСрезПоследних.Товар.ТипНоменклатуры</queryText>
       <mainTable>InformationRegister.СостояниеНоменклатуры.SliceLast</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
@@ -651,14 +654,6 @@
         <field>ТоварСсылка</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ТоварКод</dataPath>
-        <field>ТоварКод</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ТоварНаименование</dataPath>
-        <field>ТоварНаименование</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ТипНоменклатуры</dataPath>
         <field>ТипНоменклатуры</field>
       </fields>
@@ -669,65 +664,30 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Период</dataPath>
         <field>Период</field>
-        <role>
-          <accountTypeExpression></accountTypeExpression>
-          <balanceGroupName></balanceGroupName>
-          <accountField></accountField>
-        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Регистратор</dataPath>
         <field>Регистратор</field>
-        <role>
-          <accountTypeExpression></accountTypeExpression>
-          <balanceGroupName></balanceGroupName>
-          <accountField></accountField>
-        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>НомерСтроки</dataPath>
         <field>НомерСтроки</field>
-        <role>
-          <accountTypeExpression></accountTypeExpression>
-          <balanceGroupName></balanceGroupName>
-          <accountField></accountField>
-        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Активность</dataPath>
         <field>Активность</field>
-        <role>
-          <accountTypeExpression></accountTypeExpression>
-          <balanceGroupName></balanceGroupName>
-          <accountField></accountField>
-        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Арендатор</dataPath>
         <field>Арендатор</field>
-        <role>
-          <accountTypeExpression></accountTypeExpression>
-          <balanceGroupName></balanceGroupName>
-          <accountField></accountField>
-        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Станция</dataPath>
         <field>Станция</field>
-        <role>
-          <accountTypeExpression></accountTypeExpression>
-          <balanceGroupName></balanceGroupName>
-          <accountField></accountField>
-        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>СостояниеЭксплуатации</dataPath>
         <field>СостояниеЭксплуатации</field>
-        <role>
-          <accountTypeExpression></accountTypeExpression>
-          <balanceGroupName></balanceGroupName>
-          <accountField></accountField>
-        </role>
       </fields>
       <parameters>
         <name>Станция</name>
@@ -758,6 +718,7 @@
           <types>Date</types>
           <dateQualifiers/>
         </valueType>
+        <expression>ТекущаяДатаСеанса()</expression>
       </parameters>
     </extInfo>
   </attributes>

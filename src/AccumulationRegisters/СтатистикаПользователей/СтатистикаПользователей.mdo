@@ -18,7 +18,7 @@
   <enableTotalsSplitting>true</enableTotalsSplitting>
   <listPresentation>
     <key>ru</key>
-    <value>Время аренды пользователей</value>
+    <value>Статистика пользователей</value>
   </listPresentation>
   <extendedListPresentation>
     <key>ru</key>
@@ -62,6 +62,23 @@
     <synonym>
       <key>ru</key>
       <value>Баланс</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="952f5495-83cd-4404-95a9-6087d1f13549">
+    <name>ЧислоАренд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Число аренд</value>
     </synonym>
     <type>
       <types>Number</types>
