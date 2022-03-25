@@ -47,6 +47,7 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ПриостановкаРаботыСтанции.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>InformationRegister.СтатусСтанций</registerRecords>
+  <registerRecords>InformationRegister.СостояниеНоменклатуры</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="4ab6d214-81c6-4bf4-87f2-903cda628aa4">

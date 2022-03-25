@@ -17,6 +17,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Академоны</vendor>
+  <defaultReportForm>CommonForm.ФормаОтчета</defaultReportForm>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -42,6 +43,7 @@
   </languages>
   <subsystems>Subsystem.АдминистрированиеМероприятий</subsystems>
   <subsystems>Subsystem.КонтрольКлиентскихДействий</subsystems>
+  <subsystems>Subsystem.Общая</subsystems>
   <subsystems>Subsystem.Отчеты</subsystems>
   <subsystems>Subsystem.Сотрудники</subsystems>
   <subsystems>Subsystem.УправлениеНоменклатурой</subsystems>
@@ -56,6 +58,7 @@
   <roles>Role.Оператор</roles>
   <roles>Role.Пользователь</roles>
   <roles>Role.Регистрация</roles>
+  <roles>Role.Сотрудник</roles>
   <commonTemplates>CommonTemplate.ОтчетОРаботеСистемы</commonTemplates>
   <commonTemplates>CommonTemplate.ЧекПоОперации</commonTemplates>
   <commonModules>CommonModule.НастройкаИнтерфейсаВызовСервера</commonModules>
@@ -66,14 +69,18 @@
   <commonModules>CommonModule.РеквизитыФормыКлиентСервер</commonModules>
   <commonModules>CommonModule.СообщенияКлиентСервер</commonModules>
   <commonModules>CommonModule.СтрокиКлиентСервер</commonModules>
+  <commonModules>CommonModule.СтроковыеФункцииВызовСервера</commonModules>
+  <commonModules>CommonModule.СтроковыеФункцииКлиентСервер</commonModules>
   <commonForms>CommonForm.ЛКАренда</commonForms>
   <commonForms>CommonForm.ЛКИвенты</commonForms>
   <commonForms>CommonForm.ЛКИстория</commonForms>
   <commonForms>CommonForm.ЛКПоддержка</commonForms>
+  <commonForms>CommonForm.ЛКСотрудник</commonForms>
   <commonForms>CommonForm.ЛКСтанции</commonForms>
   <commonForms>CommonForm.Регистрация</commonForms>
   <commonForms>CommonForm.ФормаЛКПремиум</commonForms>
   <commonForms>CommonForm.ФормаЛКСтандарт</commonForms>
+  <commonForms>CommonForm.ФормаОтчета</commonForms>
   <catalogs>Catalog.Должности</catalogs>
   <catalogs>Catalog.Ивенты</catalogs>
   <catalogs>Catalog.Клиенты</catalogs>
@@ -109,7 +116,7 @@
   <reports>Report.ВремяРаботыСтанций</reports>
   <reports>Report.ВремяЭксплуатацииТоваров</reports>
   <reports>Report.УчастиеКлиентовВИвентах</reports>
-  <dataProcessors>DataProcessor.ЗагрузкаНоменклатуры</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаДанных</dataProcessors>
   <informationRegisters>InformationRegister.ПрайсПоТарифам</informationRegisters>
   <informationRegisters>InformationRegister.СостояниеНоменклатуры</informationRegisters>
   <informationRegisters>InformationRegister.СтатусСтанций</informationRegisters>

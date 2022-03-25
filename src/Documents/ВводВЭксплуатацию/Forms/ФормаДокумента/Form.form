@@ -284,7 +284,11 @@
   </items>
   <items xsi:type="form:FormField">
     <name>ТоварОбъектТипНоменклатуры</name>
-    <id>29</id>
+    <id>41</id>
+    <title>
+      <key>ru</key>
+      <value>Тип номенклатуры</value>
+    </title>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -295,7 +299,7 @@
     </dataPath>
     <extendedTooltip>
       <name>ТоварОбъектТипНоменклатурыРасширеннаяПодсказка</name>
-      <id>31</id>
+      <id>43</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -310,7 +314,7 @@
     </extendedTooltip>
     <contextMenu>
       <name>ТоварОбъектТипНоменклатурыКонтекстноеМеню</name>
-      <id>30</id>
+      <id>42</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>

@@ -34,4 +34,16 @@
     <parameterUseMode>Multiple</parameterUseMode>
     <representation>Auto</representation>
   </commands>
+  <commands uuid="df2be177-47d0-4464-8b97-3e6c2a632df2">
+    <name>ОтправитьНаПочту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить на почту</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ОтчетОРаботеСистемы</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
 </mdclass:Document>

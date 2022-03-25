@@ -84,10 +84,6 @@
 	<object>
 		<name>Catalog.Статусы</name>
 		<right>
-			<name>InteractiveInsert</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>false</value>
 		</right>
@@ -154,6 +150,10 @@
 			<name>InteractiveClearDeletionMark</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Catalog.Клиенты</name>
@@ -187,6 +187,10 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
 			<value>false</value>
 		</right>
 	</object>

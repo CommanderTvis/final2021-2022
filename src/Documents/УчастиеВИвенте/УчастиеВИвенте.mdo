@@ -55,7 +55,7 @@
   </listPresentation>
   <extendedListPresentation>
     <key>ru</key>
-    <value>Участия клиенттов в ивентах</value>
+    <value>Участия клиентов в ивентах</value>
   </extendedListPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>

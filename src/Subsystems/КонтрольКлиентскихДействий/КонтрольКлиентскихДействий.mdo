@@ -15,4 +15,5 @@
   <content>Enum.УсловияПолученияСтатусов</content>
   <content>Document.ПолучениеБонусныхБаллов</content>
   <content>Document.СозданиеКлиента</content>
+  <content>DataProcessor.ЗагрузкаДанных</content>
 </mdclass:Subsystem>

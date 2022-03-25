@@ -12,4 +12,5 @@
   <content>Report.ВремяЭксплуатацииТоваров</content>
   <content>Report.ВремяРаботыСтанций</content>
   <content>Report.УчастиеКлиентовВИвентах</content>
+  <content>Document.ОтчетОРаботеСистемы</content>
 </mdclass:Subsystem>

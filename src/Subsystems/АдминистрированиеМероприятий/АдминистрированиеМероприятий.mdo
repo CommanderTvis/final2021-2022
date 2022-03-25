@@ -10,4 +10,5 @@
   <content>Catalog.Ивенты</content>
   <content>Document.ПланированиеИвента</content>
   <content>Document.УчастиеВИвенте</content>
+  <content>DataProcessor.ЗагрузкаДанных</content>
 </mdclass:Subsystem>

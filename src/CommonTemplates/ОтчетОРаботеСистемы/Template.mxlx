@@ -422,8 +422,23 @@
 			</c>
 			<c>
 				<c>
-					<f>19</f>
+					<f>16</f>
 					<parameter>КоличествоСтанцийВсего</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>19</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>19</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>19</f>
 				</c>
 			</c>
 		</row>
@@ -534,7 +549,7 @@
 			<c>
 				<c>
 					<f>16</f>
-					<parameter>СуммаОплаты</parameter>
+					<parameter>ВРемонте</parameter>
 				</c>
 			</c>
 		</row>
@@ -572,7 +587,7 @@
 			<c>
 				<c>
 					<f>16</f>
-					<parameter>СуммаОплаты</parameter>
+					<parameter>Демонтированы</parameter>
 				</c>
 			</c>
 			<c>
@@ -1014,14 +1029,8 @@
 		<topBorder>0</topBorder>
 	</format>
 	<format>
-		<font>0</font>
-		<leftBorder>0</leftBorder>
-		<topBorder>0</topBorder>
-		<width>35</width>
-		<horizontalAlignment>Right</horizontalAlignment>
-		<verticalAlignment>Top</verticalAlignment>
-		<fillType>Parameter</fillType>
-		<format/>
+		<rightBorder>0</rightBorder>
+		<bottomBorder>0</bottomBorder>
 	</format>
 	<format>
 		<font>0</font>

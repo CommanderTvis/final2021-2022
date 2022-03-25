@@ -144,7 +144,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="e2825af3-87d8-4419-b0b5-70f1945805cc">
+  <forms uuid="3fd266f9-a0f2-498b-bd59-2f8480d1b75a">
     <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
@@ -153,7 +153,7 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="9d4fc929-1e27-4d2a-8690-5536f8d46f2f">
+  <forms uuid="e960a8be-2dcd-421c-86ca-49b3f95437e4">
     <name>ФормаВыбора</name>
     <synonym>
       <key>ru</key>

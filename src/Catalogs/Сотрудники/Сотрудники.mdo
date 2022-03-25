@@ -19,6 +19,10 @@
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Description</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФИО</value>
+    </synonym>
     <fullTextSearch>Use</fullTextSearch>
   </standardAttributes>
   <createOnInput>Use</createOnInput>

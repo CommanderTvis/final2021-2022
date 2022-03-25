@@ -631,8 +631,9 @@
 	СостояниеНоменклатурыСрезПоследних.Товар.Ссылка,
 	ПрайсПоТарифамСрезПоследних.Тариф
 ИЗ
-	РегистрСведений.СостояниеНоменклатуры.СрезПоследних КАК СостояниеНоменклатурыСрезПоследних,
-	РегистрСведений.ПрайсПоТарифам.СрезПоследних КАК ПрайсПоТарифамСрезПоследних
+	РегистрСведений.СостояниеНоменклатуры.СрезПоследних КАК СостояниеНоменклатурыСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПрайсПоТарифам.СрезПоследних КАК ПрайсПоТарифамСрезПоследних
+		ПО СостояниеНоменклатурыСрезПоследних.Товар.ТипНоменклатуры = ПрайсПоТарифамСрезПоследних.ТипНоменклатуры
 ГДЕ
 	СостояниеНоменклатурыСрезПоследних.Станция = &amp;Станция
 	И
@@ -664,30 +665,65 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Период</dataPath>
         <field>Период</field>
+        <role>
+          <accountTypeExpression></accountTypeExpression>
+          <balanceGroupName></balanceGroupName>
+          <accountField></accountField>
+        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Регистратор</dataPath>
         <field>Регистратор</field>
+        <role>
+          <accountTypeExpression></accountTypeExpression>
+          <balanceGroupName></balanceGroupName>
+          <accountField></accountField>
+        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>НомерСтроки</dataPath>
         <field>НомерСтроки</field>
+        <role>
+          <accountTypeExpression></accountTypeExpression>
+          <balanceGroupName></balanceGroupName>
+          <accountField></accountField>
+        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Активность</dataPath>
         <field>Активность</field>
+        <role>
+          <accountTypeExpression></accountTypeExpression>
+          <balanceGroupName></balanceGroupName>
+          <accountField></accountField>
+        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Арендатор</dataPath>
         <field>Арендатор</field>
+        <role>
+          <accountTypeExpression></accountTypeExpression>
+          <balanceGroupName></balanceGroupName>
+          <accountField></accountField>
+        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Станция</dataPath>
         <field>Станция</field>
+        <role>
+          <accountTypeExpression></accountTypeExpression>
+          <balanceGroupName></balanceGroupName>
+          <accountField></accountField>
+        </role>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>СостояниеЭксплуатации</dataPath>
         <field>СостояниеЭксплуатации</field>
+        <role>
+          <accountTypeExpression></accountTypeExpression>
+          <balanceGroupName></balanceGroupName>
+          <accountField></accountField>
+        </role>
       </fields>
       <parameters>
         <name>Станция</name>

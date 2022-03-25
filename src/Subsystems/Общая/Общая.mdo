@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56eb513c-d2e4-43ba-a8a6-aef40ff4a36f">
+  <name>Общая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общая</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Должности</content>
+  <content>Catalog.Ивенты</content>
+  <content>Catalog.Клиенты</content>
+  <content>Catalog.Номенклатура</content>
+  <content>Catalog.Сотрудники</content>
+  <content>Catalog.Станции</content>
+  <content>Catalog.ТемыПисем</content>
+  <content>Catalog.Статусы</content>
+  <content>Catalog.ТипыНоменклатуры</content>
+  <content>InformationRegister.ПрайсПоТарифам</content>
+  <content>InformationRegister.СостояниеНоменклатуры</content>
+  <content>InformationRegister.СтатусСтанций</content>
+  <content>InformationRegister.УчастиеВИвентах</content>
+  <content>AccumulationRegister.СтатистикаПользователей</content>
+  <content>Enum.ОснованияВыводаТовараИзЭксплуатации</content>
+  <content>Enum.ПричиныПолученияБаллов</content>
+  <content>Enum.СтатусыСтанций</content>
+  <content>Enum.УсловияПолученияСтатусов</content>
+</mdclass:Subsystem>

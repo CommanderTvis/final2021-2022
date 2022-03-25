@@ -9,4 +9,5 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.Должности</content>
   <content>Catalog.Сотрудники</content>
+  <content>CommonForm.ЛКСотрудник</content>
 </mdclass:Subsystem>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d50e5ff3-0f33-45be-a950-e1dfff819b67">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d50e5ff3-0f33-45be-a950-e1dfff819b67">
   <producedTypes>
     <objectType typeId="a461effd-054a-4b67-82d4-7123371d91c9" valueTypeId="5f7fdc67-eed8-4073-90d6-2706310b7595"/>
     <refType typeId="34209373-4528-4a1f-9216-de125ff82335" valueTypeId="d8239ead-ea4e-4bcf-ab6d-6c098ab7be11"/>
@@ -40,6 +40,36 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f33c9c1c-37a4-4296-b637-52b41a6dd9fa">
+      <name>АккумуляторнаяБатарейкаПальчиковая</name>
+      <description>Аккумуляторная батарейка типа АА “пальчиковая”</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="4d35d795-55c4-4c01-8244-b1bdcaf93fcd">
+      <name>ВнешнийАккумулятор2АЧ</name>
+      <description>Внешний аккумулятор 2000 mAh</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="9f9c3a6e-3bce-4e5e-bd6d-956813e67930">
+      <name>ВнешнийАккумулятор5АЧ</name>
+      <description>Внешний аккумулятор 5000 mAh</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="10f02627-21a0-4aea-8a6b-16043b66bc94">
+      <name>ВнешнийАккумулятор10АЧ</name>
+      <description>Внешний аккумулятор 10000 mAh</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+  </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
 </mdclass:Catalog>

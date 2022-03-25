@@ -12,7 +12,7 @@
   <name>СтатусСтанций</name>
   <synonym>
     <key>ru</key>
-    <value>Статус станций</value>
+    <value>Статус станций аренды</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
@@ -27,7 +27,7 @@
   <enableTotalsSliceLast>true</enableTotalsSliceLast>
   <listPresentation>
     <key>ru</key>
-    <value>Статус станций</value>
+    <value>Статус станций аренды</value>
   </listPresentation>
   <resources uuid="f1d312b4-6239-43ce-819c-c6593d50a7f4">
     <name>Состояние</name>

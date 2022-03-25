@@ -155,12 +155,13 @@
       <value>Серия</value>
     </synonym>
     <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>4</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
     </type>
+    <mask>99 99</mask>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
@@ -216,15 +217,16 @@
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>6</length>
+        <length>7</length>
         <fixed>true</fixed>
       </stringQualifiers>
     </type>
+    <mask>999-999</mask>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:StringValue">
-      <value>      </value>
+      <value>       </value>
     </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>

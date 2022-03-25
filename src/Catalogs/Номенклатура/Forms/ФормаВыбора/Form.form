@@ -419,24 +419,32 @@
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
+	Номенклатура.Ссылка,
+	Номенклатура.ПометкаУдаления,
 	Номенклатура.Код,
 	Номенклатура.Наименование,
 	Номенклатура.ТипНоменклатуры,
+	Номенклатура.Предопределенный,
+	Номенклатура.ИмяПредопределенныхДанных,
 	ПрайсПоТарифамСрезПоследних.Тариф
 ИЗ
-	РегистрСведений.ПрайсПоТарифам.СрезПоследних КАК ПрайсПоТарифамСрезПоследних,
-	РегистрСведений.СостояниеНоменклатуры.СрезПоследних КАК СостояниеНоменклатурыСрезПоследних
-		ПОЛНОЕ СОЕДИНЕНИЕ Справочник.Номенклатура КАК Номенклатура
-		ПО СостояниеНоменклатурыСрезПоследних.Товар = Номенклатура.Ссылка
-ГДЕ
-	ПрайсПоТарифамСрезПоследних.ТипНоменклатуры = Номенклатура.ТипНоменклатуры
-	И СостояниеНоменклатурыСрезПоследних.Арендатор = ЗНАЧЕНИЕ(Справочник.Клиенты.ПустаяСсылка)
-	И
-		СостояниеНоменклатурыСрезПоследних.СостояниеЭксплуатации = ЗНАЧЕНИЕ(Перечисление.ОснованияВыводаТовараИзЭксплуатации.ПустаяСсылка)</queryText>
+	Справочник.Номенклатура КАК Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПрайсПоТарифам.СрезПоследних КАК ПрайсПоТарифамСрезПоследних
+		ПО Номенклатура.ТипНоменклатуры = ПрайсПоТарифамСрезПоследних.ТипНоменклатуры</queryText>
+      <mainTable>Catalog.Номенклатура</mainTable>
+      <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПометкаУдаления</dataPath>
+        <field>ПометкаУдаления</field>
+      </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Код</dataPath>
         <field>Код</field>
@@ -450,12 +458,21 @@
         <field>ТипНоменклатуры</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Товар</dataPath>
-        <field>Товар</field>
+        <dataPath>Предопределенный</dataPath>
+        <field>Предопределенный</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяПредопределенныхДанных</dataPath>
+        <field>ИмяПредопределенныхДанных</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Тариф</dataPath>
         <field>Тариф</field>
+        <role>
+          <accountTypeExpression></accountTypeExpression>
+          <balanceGroupName></balanceGroupName>
+          <accountField></accountField>
+        </role>
       </fields>
       <parameters>
         <name>Период</name>
